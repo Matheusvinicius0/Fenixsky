@@ -1,4 +1,3 @@
-# app.py
 from fastapi import FastAPI, Request, Response
 from fastapi.responses import JSONResponse, HTMLResponse
 from jinja2 import Environment, FileSystemLoader
@@ -6,14 +5,17 @@ from slowapi import Limiter
 from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
 import logging
-# --- IMPORTAÇÕES MODIFICADAS ---
-from netcine import catalog_search, search_link, search_term # Importa search_term
+
+# Importações dos nossos módulos
+from netcine import catalog_search, search_link, search_term
 import get_channels
-from gofilmes import search_gofilmes, resolve_stream as resolve_gofilmes_stream # Importa as novas funções
+from gofilmes import search_gofilmes, resolve_stream
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
-VERSION = "0.0.2" # Versão atualizada para refletir a mudança
+
+# Atualizamos a versão para refletir as novas funcionalidades
+VERSION = "0.0.4"
 logger.info(f"Versão da aplicação: {VERSION}")
 
 templates = Environment(loader=FileSystemLoader("templates"))
@@ -22,21 +24,50 @@ rate_limit = '3/second'
 
 app = FastAPI()
 
+# Definição do Addon para o Stremio
 MANIFEST = {
-    "id": "com.fênixsky",
+    "id": "com.fenixsky",
     "version": VERSION,
-    "name": "FÊNIXSKY",
-    "description": "Tenha o melhor dos filmes e séries com Fenixsky, agora com mais fontes de conteúdo.",
+    "name": "FENIXSKY",
+    "description": "Tenha o melhor dos filmes e séries com Fenixsky, agora com múltiplas fontes de conteúdo e suporte a séries.",
     "logo": "https://i.imgur.com/qVgkbYn.png",
     "resources": ["catalog", "meta", "stream"],
     "types": ["tv", "movie", "series"],
     "catalogs": [
-        # ... (sem alterações aqui)
+        {
+            "type": "tv",
+            "id": "fenixsky",
+            "name": "FENIXSKY",
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Abertos", "Reality", "Esportes", "NBA", "PPV", "Paramount plus",
+                        "DAZN", "Nosso Futebol", "UFC", "Combate", "NFL", "Documentarios",
+                        "Infantil", "Filmes e Series", "Telecine", "HBO", "Cine Sky",
+                        "Noticias", "Musicas", "Variedades", "Cine 24h", "Desenhos",
+                        "Series 24h", "Religiosos", "4K", "Radios"
+                    ],
+                    "isRequired": False
+                }
+            ]
+        },
+        {
+            "type": "movie",
+            "id": "fenixsky",
+            "name": "FENIXSKY",
+            "extraSupported": ["search"]
+        },
+        {
+            "type": "series",
+            "id": "fenixsky",
+            "name": "FENIXSKY",
+            "extraSupported": ["search"]
+        }
     ],
     "idPrefixes": ["fenixsky", "tt"]
 }
 
-# ... (sem alterações nas funções add_cors, home, manifest, catalog_route, search, meta)
 @app.exception_handler(RateLimitExceeded)
 async def rate_limit_handler(request, exc):
     return JSONResponse(content={"error": "Too many requests"}, status_code=429)
@@ -95,12 +126,9 @@ async def meta(type: str, id: str, request: Request):
         except:
             m = {}
     else:
-        # A lógica de metadados para filmes e séries ainda não está implementada
         m = {}
     return add_cors(JSONResponse(content={"meta": m}))
 
-
-# --- ROTA DE STREAM MODIFICADA ---
 @app.get("/stream/{type}/{id}.json")
 @limiter.limit(rate_limit)
 async def stream(type: str, id: str, request: Request):
@@ -114,49 +142,51 @@ async def stream(type: str, id: str, request: Request):
             pass
             
     elif type in ["movie", "series"]:
-        # 1. Buscar títulos a partir do ID do IMDb (função reutilizada do netcine.py)
-        # Para séries, o id é "tt12345:1:1", então pegamos apenas a parte do IMDb ID
         imdb_id = id.split(':')[0]
-        titles, _ = search_term(imdb_id) # Usamos a função para obter títulos alternativos
+        season, episode = None, None
+        if type == 'series':
+            try:
+                parts = id.split(':')
+                season = int(parts[1])
+                episode = int(parts[2])
+                logger.info(f"Série detectada: Temporada {season}, Episódio {episode}")
+            except (IndexError, ValueError):
+                logger.error("ID de série mal formatado. Esperado 'imdb:temporada:episódio'.")
+                return add_cors(JSONResponse(content={"streams": []}))
+
+        titles, _ = search_term(imdb_id)
 
         if not titles:
             logger.warning(f"Não foi possível obter títulos para o IMDb ID: {imdb_id}")
             return add_cors(JSONResponse(content={"streams": []}))
         
-        # --- FONTE 1: NETCINE (lógica existente) ---
+        # --- FONTE 1: NETCINE ---
         try:
             logger.info("Buscando streams no Netcine...")
             netcine_streams = search_link(id)
             if netcine_streams:
                 logger.info(f"Encontrados {len(netcine_streams)} streams via Netcine.")
                 scrape_.extend(netcine_streams)
-            else:
-                logger.warning(f"Nenhum stream encontrado no Netcine para {id}.")
         except Exception as e:
             logger.error(f"Erro ao buscar em netcine: {e}", exc_info=True)
 
-        # --- FONTE 2: GOFILMES (nova lógica) ---
+        # --- FONTE 2: GOFILMES ---
         try:
             logger.info("Buscando streams no GoFilmes...")
-            # Usa os títulos obtidos do IMDb para buscar no GoFilmes
-            gofilmes_player_options = search_gofilmes(titles)
+            gofilmes_player_options = search_gofilmes(titles, type, season, episode)
             
             if gofilmes_player_options:
                 logger.info(f"Encontradas {len(gofilmes_player_options)} opções de player no GoFilmes.")
                 for option in gofilmes_player_options:
-                    # Para cada opção de player, resolve o stream final
-                    stream_url, stream_headers = resolve_gofilmes_stream(option['url'])
+                    stream_url, stream_headers = resolve_stream(option['url'])
                     if stream_url:
                         scrape_.append({
                             "name": option['name'],
                             "url": stream_url,
-                            "behaviorHints": {
-                                # "notWebReady": True, # Ative se o link não for direto (MP4, etc.)
-                                "proxyHeaders": {"request": stream_headers}
-                            }
+                            "behaviorHints": { "proxyHeaders": {"request": stream_headers} }
                         })
             else:
-                logger.warning(f"Nenhuma opção de player encontrada no GoFilmes para os títulos fornecidos.")
+                logger.warning(f"Nenhuma opção de player encontrada no GoFilmes.")
         except Exception as e:
             logger.error(f"Erro ao buscar no GoFilmes: {e}", exc_info=True)
 
