@@ -23,9 +23,9 @@ rate_limit = '3/second'
 app = FastAPI()
 
 MANIFEST = {
-    "id": "com.fenixsky",
+    "id": "com.fênixsky",
     "version": VERSION,
-    "name": "FENIXSKY",
+    "name": "FÊNIXSKY",
     "description": "Tenha o melhor dos filmes e séries com Fenixsky, agora com mais fontes de conteúdo.",
     "logo": "https://i.imgur.com/qVgkbYn.png",
     "resources": ["catalog", "meta", "stream"],
