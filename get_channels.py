@@ -14,8 +14,9 @@ def encode_id(i):
     return id_base64_
 
 def decode_id(i):
-    if 'skyflix' in i:
-        i = i.replace('skyflix:', '')
+    # NOME ALTERADO
+    if 'fenixsky' in i:
+        i = i.replace('fenixsky:', '')
     b64decode_ = fix_b64(i)
     dict_ = json.loads(base64.urlsafe_b64decode(b64decode_).decode())  # Use urlsafe_b64decode
     return dict_
@@ -40,7 +41,7 @@ def get_stream_tv(i):
     i_ = decode_id(i)
     return {
         'streams': [{
-        'name': 'Skyflix',
+        'name': 'FenixSky', # NOME ALTERADO
         'title': i_.get('name', "Live Channel"),
         'url': f"https://zoreu-f4mtesterweb.hf.space/proxy?url={i_.get('stream', '')}",
         }],
@@ -52,13 +53,8 @@ class xtream_api:
         self.live_url = '{0}/player_api.php?username={1}&password={2}&action=get_live_categories'.format(dns, username, password)
         self.player_api = '{0}/player_api.php?username={1}&password={2}'.format(dns, username, password)
         self.play_url = '{0}/live/{1}/{2}/'.format(dns,username,password)
-        # self.play_movies = '{0}/movie/{1}/{2}/'.format(dns,username,password)
-        # self.play_series = '{0}/series/{1}/{2}/'.format(dns,username,password)
-
 
     def list_channels(self, category):
-        #grupos: abertos, esportes, nba, ppv, paramount_plus, dazn, nossofutebol, ufc, combate, nfl, documentarios, infantil, filmeseseries, telecine, hbo, cinesky, noticias, musicas, variedades, cine24h, desenhos, series24h, 
-        # religiosos, 4k, radios
         group = {'Abertos': ['sbt', 'abertos', 'globo', 'record'], 
                  'Esportes': ['amazon', 'espn', 'sportv', 'premiere', 'sportv', 'premiere', 'esportes', 'disney', 'max'], 
                  'NBA': ['nba'], 
@@ -109,7 +105,8 @@ class xtream_api:
     def generate_id_channel(self, name, url, thumb, genre):
         i = {'name': name, 'stream': url, 'thumb': thumb, 'genre': genre}
         id_json = json.dumps(i)
-        stremio_id = 'skyflix:' + encode_id(id_json)
+        # NOME ALTERADO
+        stremio_id = 'fenixsky:' + encode_id(id_json)
         return stremio_id
 
 
@@ -147,8 +144,3 @@ def get_api():
         return api
     except Exception as e:
         raise f'Erro em {e}'
-    
-
-
-
-
