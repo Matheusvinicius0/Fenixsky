@@ -1,57 +1,71 @@
-# gofilmes.py
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import quote, urljoin
 import logging
-import re # Importa o módulo de Expressões Regulares
+import re
 
 # Configuração do logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def search_gofilmes(titles):
+def search_gofilmes(titles, content_type, season=None, episode=None):
     """
-    Busca por um filme no gofilmes e retorna TODOS os links de player encontrados.
+    Busca por um filme ou série no gofilmes e retorna o link do player para o item específico.
+    (Esta função está correta e não precisa de alterações)
     """
-    logging.info(f"Iniciando busca no GoFilmes com os títulos: {titles}")
+    logging.info(f"Iniciando busca no GoFilmes para tipo '{content_type}' com os títulos: {titles}")
     
     base_url = "https://gofilmess.top"
 
+    if content_type == 'series':
+        path = 'series'
+        selector = 'div.ep a[href]'
+    else: 
+        path = ''
+        selector = 'div.link a[href]'
+
     for title in titles:
-        search_slug = title.replace(' ', '-').lower()
-        url = f"{base_url}/{quote(search_slug)}"
+        search_slug = title.replace('.', '').replace(' ', '-').lower()
+
+        if path:
+            url = f"{base_url}/{path}/{quote(search_slug)}"
+        else:
+            url = f"{base_url}/{quote(search_slug)}"
         
         logging.info(f"Tentando buscar em: {url}")
         try:
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'}
             response = requests.get(url, headers=headers, timeout=10)
-            logging.info(f"'{title}' - Status da resposta: {response.status_code}")
+            logging.info(f"'{title}' ({path or 'filmes'}) - Status da resposta: {response.status_code}")
 
             if response.status_code == 200:
                 soup = BeautifulSoup(response.text, 'html.parser')
                 player_options = []
                 
-                link_divs = soup.find_all('div', class_='link')
+                player_links = soup.select(selector)
 
-                if not link_divs:
-                    logging.warning(f"Página encontrada para '{title}', mas nenhuma <div class='link'> foi encontrada.")
+                if not player_links:
+                    logging.warning(f"Página encontrada, mas nenhum link encontrado com o seletor '{selector}'.")
                     continue
 
-                logging.info(f"Encontradas {len(link_divs)} divs com a classe 'link'. Procurando players...")
+                logging.info(f"Encontrados {len(player_links)} links com o seletor '{selector}'.")
                 
-                for div in link_divs:
-                    player_link = div.find('a', href=True)
-                    if player_link:
-                        player_url = player_link.get('href')
-                        player_name = player_link.get_text(strip=True)
-                        full_player_url = urljoin(base_url, player_url)
-                        
+                if content_type == 'series':
+                    if episode and 0 < episode <= len(player_links):
+                        target_link = player_links[episode - 1]
+                        logging.info(f"Episódio alvo {episode} encontrado.")
                         player_options.append({
-                            "name": f"GoFilmes - {player_name}",
-                            "url": full_player_url
+                            "name": f"GoFilmes - S{season}E{episode}",
+                            "url": urljoin(base_url, target_link.get('href'))
+                        })
+                else: 
+                    for link in player_links:
+                        player_options.append({
+                            "name": f"GoFilmes - {link.get_text(strip=True)}",
+                            "url": urljoin(base_url, link.get('href'))
                         })
 
                 if player_options:
-                    logging.info(f"SUCESSO! {len(player_options)} opções de player encontradas para '{title}'.")
+                    logging.info(f"SUCESSO! {len(player_options)} opções de player prontas para '{title}'.")
                     return player_options
             
         except requests.RequestException as e:
@@ -59,25 +73,25 @@ def search_gofilmes(titles):
         except Exception as e:
             logging.error(f"Erro excepcional ao buscar por '{title}': {e}", exc_info=True)
             
-    logging.warning("Nenhuma opção de player encontrada no GoFilmes após todas as tentativas.")
+    logging.warning(f"Nenhuma opção de player encontrada no GoFilmes para {content_type} após todas as tentativas.")
     return []
 
 def resolve_stream(player_url):
     """
     Recebe a URL da página do player do GoFilmes e extrai o link do stream final.
-    --- VERSÃO FINAL E MAIS PODEROSA ---
     """
     stream_url = ''
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/88.0.4324.96 Safari/537.36"}
     
     try:
         logging.info(f"Resolvendo stream da página do player: {player_url}")
-        headers.update({'Referer': 'https://gofilmess.top/'})
+        page_headers = headers.copy()
+        # O Referer para a página do player deve ser a página principal do site
+        page_headers.update({'Referer': 'https://gofilmess.top/'})
         
-        r = requests.get(player_url, headers=headers, timeout=10, allow_redirects=True)
+        r = requests.get(player_url, headers=page_headers, timeout=10, allow_redirects=True)
         soup = BeautifulSoup(r.text, 'html.parser')
 
-        # --- LÓGICA DE BUSCA MELHORADA ---
         # Tentativa 1: Procurar por um iframe
         iframe = soup.find('iframe')
         if iframe and iframe.has_attr('src'):
@@ -94,18 +108,36 @@ def resolve_stream(player_url):
                 logging.info(f"Link do stream encontrado via VIDEO/SOURCE: {stream_url}")
                 return stream_url, headers
 
-        # Tentativa 3: Procurar o link dentro de uma tag <script> usando Regex
+        # Tentativa 3: Procurar o link do JW Player dentro de uma tag <script>
         scripts = soup.find_all('script')
         for script in scripts:
             if script.string and 'playlist' in script.string:
-                # Usa Regex para encontrar o valor do campo "file"
                 match = re.search(r'"file"\s*:\s*"([^"]+)"', script.string)
                 if match:
-                    stream_url = match.group(1) # Pega o primeiro grupo capturado (o URL)
-                    logging.info(f"Link do stream encontrado via JAVASCRIPT/REGEX: {stream_url}")
+                    stream_url = match.group(1)
+                    logging.info(f"Link do stream encontrado via JAVASCRIPT/REGEX (JW Player): {stream_url}")
                     return stream_url, headers
         
-        logging.warning("Nenhuma das tentativas (Iframe, Vídeo, JavaScript) encontrou um link de stream.")
+        # Tentativa 4: Extrair um link de API do JavaScript e chamar essa API
+        api_url = None
+        for script in scripts:
+            if script.string and 'fetchVideoLink' in script.string:
+                match = re.search(r'const apiUrl = `([^`]+)`;', script.string)
+                if match:
+                    api_url = match.group(1)
+                    logging.info(f"Link de API encontrado: {api_url}")
+                    
+                    # --- CORREÇÃO: Adicionar o 'Referer' na chamada da API ---
+                    api_headers = headers.copy()
+                    api_headers['Referer'] = player_url # O referer é a própria página do player
+                    
+                    # Faz a chamada à API encontrada com os cabeçalhos corretos
+                    api_response = requests.get(api_url, headers=api_headers, timeout=15)
+                    api_response.raise_for_status()
+                    
+                    stream_url = api_response.text.strip()
+                    logging.info(f"Link do stream obtido da API: {stream_url}")
+                    return stream_url, headers
 
     except Exception as e:
         logging.error(f"Erro ao resolver o stream de '{player_url}': {e}", exc_info=True)
