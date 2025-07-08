@@ -9,14 +9,14 @@ import logging
 # Importações dos nossos módulos
 from netcine import catalog_search, search_link, search_term
 import get_channels
-from gofilmes import search_gofilmes, resolve_stream
+from gofilmes import search_gofilmes, resolve_stream as resolve_gofilmes_stream
+from topflix import search_topflix
 
+# A configuração do logging permanece, mas não será usada ativamente nas rotas
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Atualizamos a versão para refletir as novas funcionalidades
-VERSION = "0.0.4"
-logger.info(f"Versão da aplicação: {VERSION}")
+VERSION = "0.0.7"
 
 templates = Environment(loader=FileSystemLoader("templates"))
 limiter = Limiter(key_func=get_remote_address)
@@ -29,7 +29,7 @@ MANIFEST = {
     "id": "com.fenixsky",
     "version": VERSION,
     "name": "FENIXSKY",
-    "description": "Tenha o melhor dos filmes e séries com Fenixsky, agora com múltiplas fontes de conteúdo e suporte a séries.",
+    "description": "Tenha o melhor dos filmes e séries com múltiplas fontes de conteúdo.",
     "logo": "https://i.imgur.com/qVgkbYn.png",
     "resources": ["catalog", "meta", "stream"],
     "types": ["tv", "movie", "series"],
@@ -133,8 +133,7 @@ async def meta(type: str, id: str, request: Request):
 @limiter.limit(rate_limit)
 async def stream(type: str, id: str, request: Request):
     scrape_ = []
-    logger.info(f"Solicitação de stream para tipo: '{type}', id: '{id}'")
-
+    
     if type == "tv":
         try:
             scrape_ = get_channels.get_stream_tv(id).get('streams', [])
@@ -149,49 +148,38 @@ async def stream(type: str, id: str, request: Request):
                 parts = id.split(':')
                 season = int(parts[1])
                 episode = int(parts[2])
-                logger.info(f"Série detectada: Temporada {season}, Episódio {episode}")
             except (IndexError, ValueError):
-                logger.error("ID de série mal formatado. Esperado 'imdb:temporada:episódio'.")
                 return add_cors(JSONResponse(content={"streams": []}))
 
         titles, _ = search_term(imdb_id)
-
         if not titles:
-            logger.warning(f"Não foi possível obter títulos para o IMDb ID: {imdb_id}")
             return add_cors(JSONResponse(content={"streams": []}))
         
         # --- FONTE 1: NETCINE ---
         try:
-            logger.info("Buscando streams no Netcine...")
             netcine_streams = search_link(id)
-            if netcine_streams:
-                logger.info(f"Encontrados {len(netcine_streams)} streams via Netcine.")
-                scrape_.extend(netcine_streams)
-        except Exception as e:
-            logger.error(f"Erro ao buscar em netcine: {e}", exc_info=True)
+            if netcine_streams: scrape_.extend(netcine_streams)
+        except Exception:
+            pass
 
         # --- FONTE 2: GOFILMES ---
         try:
-            logger.info("Buscando streams no GoFilmes...")
             gofilmes_player_options = search_gofilmes(titles, type, season, episode)
-            
             if gofilmes_player_options:
-                logger.info(f"Encontradas {len(gofilmes_player_options)} opções de player no GoFilmes.")
                 for option in gofilmes_player_options:
-                    stream_url, stream_headers = resolve_stream(option['url'])
+                    stream_url, stream_headers = resolve_gofilmes_stream(option['url'])
                     if stream_url:
-                        scrape_.append({
-                            "name": option['name'],
-                            "url": stream_url,
-                            "behaviorHints": { "proxyHeaders": {"request": stream_headers} }
-                        })
-            else:
-                logger.warning(f"Nenhuma opção de player encontrada no GoFilmes.")
-        except Exception as e:
-            logger.error(f"Erro ao buscar no GoFilmes: {e}", exc_info=True)
+                        scrape_.append({"name": option['name'], "url": stream_url, "behaviorHints": { "proxyHeaders": {"request": stream_headers} }})
+        except Exception:
+            pass
 
-    if not scrape_:
-        logger.warning(f"Nenhum stream encontrado para {type}/{id} após buscar em todas as fontes.")
+        # --- FONTE 3: TOPFLIX ---
+        try:
+            topflix_streams = search_topflix(titles, type, season, episode)
+            if topflix_streams:
+                scrape_.extend(topflix_streams)
+        except Exception:
+            pass
 
     return add_cors(JSONResponse(content={"streams": scrape_}))
 
