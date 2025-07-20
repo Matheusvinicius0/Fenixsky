@@ -9,19 +9,17 @@ import logging
 # Importações dos nossos módulos
 from netcine import catalog_search, search_link, search_term
 from gofilmes import search_gofilmes, resolve_stream as resolve_gofilmes_stream
-# from dooplayer import search_dooplayer # Removido temporariamente se não estiver em uso ou causar erros
-# Certifique-se que o ficheiro superflix.py existe e está correto
-from superflix import search_superflix, resolve_superflix_stream
+from topflix import search_topflix
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-VERSION = "0.3.1-syntax-fix"
+VERSION = "0.4.2-mediafire-warning"
 
 MANIFEST = {
     "id": "com.fenixsky", "version": VERSION, "name": "FENIXSKY",
-    "description": "Tenha o melhor dos filmes e séries com múltiplas fontes de conteúdo.",
+    "description": "Fontes: GoFilmes, Topflix e Netcine.",
     "logo": "https://i.imgur.com/qVgkbYn.png", "resources": ["catalog", "meta", "stream"],
     "types": ["movie", "series"], "catalogs": [
         {"type": "movie", "id": "fenixsky", "name": "FENIXSKY", "extraSupported": ["search"]},
@@ -29,7 +27,6 @@ MANIFEST = {
     ], "idPrefixes": ["fenixsky", "tt"]
 }
 
-# Certifique-se de que a pasta 'templates' e o ficheiro 'index.html' existem
 templates = Environment(loader=FileSystemLoader("templates"))
 limiter = Limiter(key_func=get_remote_address)
 rate_limit = '3/second'
@@ -90,24 +87,15 @@ async def stream(type: str, id: str, request: Request):
         if not titles:
             return add_cors(JSONResponse(content={"streams": []}))
         
-        # Estrutura correta para cada fonte
+        # --- Fonte: Topflix (para filmes e séries) ---
+        try:
+            topflix_streams = search_topflix(titles, type, season, episode)
+            if topflix_streams:
+                scrape_.extend(topflix_streams)
+        except Exception as e:
+            logger.error(f"Erro ao buscar na fonte Topflix: {e}")
         
-        # Fonte: Superflix
-        if type == 'movie':
-            try:
-                player_options = search_superflix(titles)
-                for option in player_options:
-                    final_url = resolve_superflix_stream(option['url'])
-                    if final_url:
-                        scrape_.append({
-                            "name": option['name'],
-                            "url": final_url,
-                            "behaviorHints": {"notWebReady": False}
-                        })
-            except Exception as e:
-                logger.error(f"Erro ao buscar na fonte Superflix: {e}")
-        
-        # Fonte: Netcine
+        # --- Fonte: Netcine (para filmes e séries) ---
         try:
             netcine_streams = search_link(id)
             if netcine_streams: 
@@ -115,17 +103,28 @@ async def stream(type: str, id: str, request: Request):
         except Exception as e: 
             logger.error(f"Erro ao buscar na fonte Netcine: {e}")
 
-        # Fonte: GoFilmes
+        # --- Fonte: GoFilmes (para filmes e séries) ---
         try:
             gofilmes_player_options = search_gofilmes(titles, type, season, episode)
             for option in gofilmes_player_options:
                 stream_url, stream_headers = resolve_gofilmes_stream(option['url'])
                 if stream_url:
-                    scrape_.append({
-                        "name": option['name'], 
-                        "url": stream_url,
-                        "behaviorHints": {"proxyHeaders": {"request": stream_headers}}
-                    })
+                    stream_name = option['name']
+                    
+                    # --- AQUI ESTÁ A LÓGICA DO AVISO ---
+                    if 'mediafire.com' in stream_url:
+                        stream_name += " (Só no Navegador)"
+
+                    stream_obj = {
+                        "name": stream_name, 
+                        "url": stream_url
+                    }
+                    
+                    # Adiciona os headers apenas se o método fallback os retornar
+                    if stream_headers:
+                        stream_obj["behaviorHints"] = {"proxyHeaders": {"request": stream_headers}}
+                    
+                    scrape_.append(stream_obj)
         except Exception as e: 
             logger.error(f"Erro ao buscar na fonte GoFilmes: {e}")
 
