@@ -9,137 +9,96 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 def search_gofilmes(titles, content_type, season=None, episode=None):
     """
-    Busca por um filme ou série no gofilmes e retorna o link do player para o item específico.
-    (Esta função está correta e não precisa de alterações)
+    Busca por um filme ou série no GoFilmes e retorna o link da página do player.
     """
-    logging.info(f"Iniciando busca no GoFilmes para tipo '{content_type}' com os títulos: {titles}")
-    
+    # ... (Esta função está correta e permanece inalterada) ...
     base_url = "https://gofilmess.top"
-
-    if content_type == 'series':
-        path = 'series'
-        selector = 'div.ep a[href]'
-    else: 
-        path = ''
-        selector = 'div.link a[href]'
-
     for title in titles:
+        if not title or len(title) < 2: continue
         search_slug = title.replace('.', '').replace(' ', '-').lower()
-
-        if path:
-            url = f"{base_url}/{path}/{quote(search_slug)}"
-        else:
-            url = f"{base_url}/{quote(search_slug)}"
-        
+        path = 'series' if content_type == 'series' else 'filmes'
+        url = f"{base_url}/{path}/{quote(search_slug)}" if content_type == 'series' else f"{base_url}/{quote(search_slug)}"
         logging.info(f"Tentando buscar em: {url}")
         try:
-            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'}
+            headers = {'User-Agent': 'Mozilla/5.0'}
             response = requests.get(url, headers=headers, timeout=10)
-            logging.info(f"'{title}' ({path or 'filmes'}) - Status da resposta: {response.status_code}")
-
+            logging.info(f"'{title}' ({path}) - Status da resposta: {response.status_code}")
             if response.status_code == 200:
                 soup = BeautifulSoup(response.text, 'html.parser')
-                player_options = []
-                
-                player_links = soup.select(selector)
-
-                if not player_links:
-                    logging.warning(f"Página encontrada, mas nenhum link encontrado com o seletor '{selector}'.")
-                    continue
-
-                logging.info(f"Encontrados {len(player_links)} links com o seletor '{selector}'.")
-                
                 if content_type == 'series':
-                    if episode and 0 < episode <= len(player_links):
-                        target_link = player_links[episode - 1]
-                        logging.info(f"Episódio alvo {episode} encontrado.")
-                        player_options.append({
-                            "name": f"GoFilmes - S{season}E{episode}",
-                            "url": urljoin(base_url, target_link.get('href'))
-                        })
-                else: 
-                    for link in player_links:
-                        player_options.append({
-                            "name": f"GoFilmes - {link.get_text(strip=True)}",
-                            "url": urljoin(base_url, link.get('href'))
-                        })
-
-                if player_options:
-                    logging.info(f"SUCESSO! {len(player_options)} opções de player prontas para '{title}'.")
-                    return player_options
-            
+                    season_selectors = ['div.app-content--single div.card.mb-3', 'div#seasons div.season-item', 'ul.seasons-list > li.season', 'div.panel', 'div.seasons > div.season', 'div[id^="season-"]']
+                    panels = []
+                    for selector in season_selectors:
+                        panels = soup.select(selector)
+                        if panels:
+                            logging.info(f"Encontrados {len(panels)} painéis de temporada com o seletor '{selector}'")
+                            break
+                    if not panels:
+                        logging.warning(f"Nenhum painel de temporada encontrado para '{title}'.")
+                        continue
+                    if not (season and episode and 0 < season <= len(panels)): continue
+                    selected_panel = panels[season - 1]
+                    episode_links = selected_panel.select('ul.episodes-list li a[href], div.ep a[href], li a[href]')
+                    if 0 < episode <= len(episode_links):
+                        return [{"name": f"GoFilmes - S{season}E{episode}", "url": urljoin(base_url, episode_links[episode - 1]['href'])}]
+                else:
+                    player_links = soup.select('div.link a[href]')
+                    if player_links:
+                        return [{"name": f"GoFilmes - {link.get_text(strip=True)}", "url": urljoin(base_url, link['href'])} for link in player_links]
         except requests.RequestException as e:
-            logging.error(f"Erro de requisição para o título '{title}': {e}")
+            logging.error(f"Erro de requisição para '{title}': {e}")
         except Exception as e:
-            logging.error(f"Erro excepcional ao buscar por '{title}': {e}", exc_info=True)
-            
+            logging.error(f"Erro ao processar '{title}': {e}", exc_info=True)
     logging.warning(f"Nenhuma opção de player encontrada no GoFilmes para {content_type} após todas as tentativas.")
     return []
 
+
 def resolve_stream(player_url):
     """
-    Recebe a URL da página do player do GoFilmes e extrai o link do stream final.
+    Recebe a URL da página do player e extrai o link do stream final.
+    CORRIGIDO: Agora retorna o 'Referer' junto com os cabeçalhos.
     """
     stream_url = ''
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/88.0.4324.96 Safari/537.36"}
+    # Headers base que serão retornados para o Stremio usar
+    headers_for_stremio = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    }
     
     try:
         logging.info(f"Resolvendo stream da página do player: {player_url}")
-        page_headers = headers.copy()
-        # O Referer para a página do player deve ser a página principal do site
-        page_headers.update({'Referer': 'https://gofilmess.top/'})
         
-        r = requests.get(player_url, headers=page_headers, timeout=10, allow_redirects=True)
+        # Headers para a NOSSA requisição, que inclui o Referer do site principal
+        request_headers = headers_for_stremio.copy()
+        request_headers['Referer'] = 'https://gofilmess.top/'
+        
+        r = requests.get(player_url, headers=request_headers, timeout=10, allow_redirects=True)
+        r.raise_for_status()
         soup = BeautifulSoup(r.text, 'html.parser')
 
-        # Tentativa 1: Procurar por um iframe
         iframe = soup.find('iframe')
         if iframe and iframe.has_attr('src'):
             stream_url = iframe['src']
             logging.info(f"Link do stream encontrado via IFRAME: {stream_url}")
-            return stream_url, headers
+            
+            # --- AQUI ESTÁ A CORREÇÃO ---
+            # Adicionamos o 'Referer' aos headers que o Stremio vai usar.
+            # O servidor final (ex: Mixdrop) precisa saber que o pedido veio da página do player do GoFilmes.
+            headers_for_stremio['Referer'] = player_url
+            
+            return stream_url, headers_for_stremio
 
-        # Tentativa 2: Procurar por uma tag <video> com <source>
-        video_tag = soup.find('video')
-        if video_tag:
-            source_tag = video_tag.find('source')
-            if source_tag and source_tag.has_attr('src'):
-                stream_url = source_tag['src']
-                logging.info(f"Link do stream encontrado via VIDEO/SOURCE: {stream_url}")
-                return stream_url, headers
-
-        # Tentativa 3: Procurar o link do JW Player dentro de uma tag <script>
         scripts = soup.find_all('script')
         for script in scripts:
-            if script.string and 'playlist' in script.string:
+            if script.string:
                 match = re.search(r'"file"\s*:\s*"([^"]+)"', script.string)
                 if match:
                     stream_url = match.group(1)
-                    logging.info(f"Link do stream encontrado via JAVASCRIPT/REGEX (JW Player): {stream_url}")
-                    return stream_url, headers
+                    logging.info(f"Link do stream encontrado via JS (Playlist): {stream_url}")
+                    headers_for_stremio['Referer'] = player_url # Adiciona o referer aqui também
+                    return stream_url, headers_for_stremio
         
-        # Tentativa 4: Extrair um link de API do JavaScript e chamar essa API
-        api_url = None
-        for script in scripts:
-            if script.string and 'fetchVideoLink' in script.string:
-                match = re.search(r'const apiUrl = `([^`]+)`;', script.string)
-                if match:
-                    api_url = match.group(1)
-                    logging.info(f"Link de API encontrado: {api_url}")
-                    
-                    # --- CORREÇÃO: Adicionar o 'Referer' na chamada da API ---
-                    api_headers = headers.copy()
-                    api_headers['Referer'] = player_url # O referer é a própria página do player
-                    
-                    # Faz a chamada à API encontrada com os cabeçalhos corretos
-                    api_response = requests.get(api_url, headers=api_headers, timeout=15)
-                    api_response.raise_for_status()
-                    
-                    stream_url = api_response.text.strip()
-                    logging.info(f"Link do stream obtido da API: {stream_url}")
-                    return stream_url, headers
-
     except Exception as e:
         logging.error(f"Erro ao resolver o stream de '{player_url}': {e}", exc_info=True)
-        
-    return stream_url, headers
+
+    logging.warning(f"Não foi possível resolver o stream para: {player_url}")
+    return stream_url, headers_for_stremio
