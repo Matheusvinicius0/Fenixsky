@@ -8,65 +8,32 @@ import logging
 
 # Importações dos nossos módulos
 from netcine import catalog_search, search_link, search_term
-import get_channels
 from gofilmes import search_gofilmes, resolve_stream as resolve_gofilmes_stream
-from topflix import search_topflix
+# from dooplayer import search_dooplayer # Removido temporariamente se não estiver em uso ou causar erros
+# Certifique-se que o ficheiro superflix.py existe e está correto
+from superflix import search_superflix, resolve_superflix_stream
 
-# A configuração do logging permanece, mas não será usada ativamente nas rotas
+# Configuração de logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-VERSION = "0.0.7"
+VERSION = "0.3.1-syntax-fix"
 
+MANIFEST = {
+    "id": "com.fenixsky", "version": VERSION, "name": "FENIXSKY",
+    "description": "Tenha o melhor dos filmes e séries com múltiplas fontes de conteúdo.",
+    "logo": "https://i.imgur.com/qVgkbYn.png", "resources": ["catalog", "meta", "stream"],
+    "types": ["movie", "series"], "catalogs": [
+        {"type": "movie", "id": "fenixsky", "name": "FENIXSKY", "extraSupported": ["search"]},
+        {"type": "series", "id": "fenixsky", "name": "FENIXSKY", "extraSupported": ["search"]}
+    ], "idPrefixes": ["fenixsky", "tt"]
+}
+
+# Certifique-se de que a pasta 'templates' e o ficheiro 'index.html' existem
 templates = Environment(loader=FileSystemLoader("templates"))
 limiter = Limiter(key_func=get_remote_address)
 rate_limit = '3/second'
-
 app = FastAPI()
-
-# Definição do Addon para o Stremio
-MANIFEST = {
-    "id": "com.fenixsky",
-    "version": VERSION,
-    "name": "FENIXSKY",
-    "description": "Tenha o melhor dos filmes e séries com múltiplas fontes de conteúdo.",
-    "logo": "https://i.imgur.com/qVgkbYn.png",
-    "resources": ["catalog", "meta", "stream"],
-    "types": ["tv", "movie", "series"],
-    "catalogs": [
-        {
-            "type": "tv",
-            "id": "fenixsky",
-            "name": "FENIXSKY",
-            "extra": [
-                {
-                    "name": "genre",
-                    "options": [
-                        "Abertos", "Reality", "Esportes", "NBA", "PPV", "Paramount plus",
-                        "DAZN", "Nosso Futebol", "UFC", "Combate", "NFL", "Documentarios",
-                        "Infantil", "Filmes e Series", "Telecine", "HBO", "Cine Sky",
-                        "Noticias", "Musicas", "Variedades", "Cine 24h", "Desenhos",
-                        "Series 24h", "Religiosos", "4K", "Radios"
-                    ],
-                    "isRequired": False
-                }
-            ]
-        },
-        {
-            "type": "movie",
-            "id": "fenixsky",
-            "name": "FENIXSKY",
-            "extraSupported": ["search"]
-        },
-        {
-            "type": "series",
-            "id": "fenixsky",
-            "name": "FENIXSKY",
-            "extraSupported": ["search"]
-        }
-    ],
-    "idPrefixes": ["fenixsky", "tt"]
-}
 
 @app.exception_handler(RateLimitExceeded)
 async def rate_limit_handler(request, exc):
@@ -83,32 +50,12 @@ def add_cors(response: Response):
 @limiter.limit(rate_limit)
 async def home(request: Request):
     template = templates.get_template("index.html")
-    response = HTMLResponse(template.render(
-        name=MANIFEST['name'],
-        types=MANIFEST['types'],
-        logo=MANIFEST['logo'],
-        description=MANIFEST['description'],
-        version=MANIFEST['version']
-    ))
-    return add_cors(response)
+    return add_cors(HTMLResponse(template.render(name=MANIFEST['name'], types=MANIFEST['types'], logo=MANIFEST['logo'], description=MANIFEST['description'], version=MANIFEST['version'])))
 
 @app.get("/manifest.json")
 @limiter.limit(rate_limit)
 async def manifest(request: Request):
     return add_cors(JSONResponse(content=MANIFEST))
-
-@app.get("/catalog/{type}/{id}.json")
-@limiter.limit(rate_limit)
-async def catalog_route(type: str, id: str, request: Request):    
-    if type == 'tv':
-        try: 
-            api = get_channels.get_api()       
-            itens = [canal for canal in api.list_channels('Abertos')]
-        except:
-            itens = []
-    else:
-        itens = []
-    return add_cors(JSONResponse(content={"metas": itens}))
 
 @app.get("/catalog/{type}/skyflix/search={query}.json")
 @limiter.limit(rate_limit)
@@ -120,29 +67,17 @@ async def search(type: str, query: str, request: Request):
 @app.get("/meta/{type}/{id}.json")
 @limiter.limit(rate_limit)
 async def meta(type: str, id: str, request: Request):
-    if type == 'tv':
-        try:
-            m = get_channels.get_meta_tv(id)
-        except:
-            m = {}
-    else:
-        m = {}
-    return add_cors(JSONResponse(content={"meta": m}))
+    return add_cors(JSONResponse(content={"meta": {}}))
 
 @app.get("/stream/{type}/{id}.json")
 @limiter.limit(rate_limit)
 async def stream(type: str, id: str, request: Request):
     scrape_ = []
     
-    if type == "tv":
-        try:
-            scrape_ = get_channels.get_stream_tv(id).get('streams', [])
-        except:
-            pass
-            
-    elif type in ["movie", "series"]:
+    if type in ["movie", "series"]:
         imdb_id = id.split(':')[0]
         season, episode = None, None
+
         if type == 'series':
             try:
                 parts = id.split(':')
@@ -155,31 +90,44 @@ async def stream(type: str, id: str, request: Request):
         if not titles:
             return add_cors(JSONResponse(content={"streams": []}))
         
-        # --- FONTE 1: NETCINE ---
+        # Estrutura correta para cada fonte
+        
+        # Fonte: Superflix
+        if type == 'movie':
+            try:
+                player_options = search_superflix(titles)
+                for option in player_options:
+                    final_url = resolve_superflix_stream(option['url'])
+                    if final_url:
+                        scrape_.append({
+                            "name": option['name'],
+                            "url": final_url,
+                            "behaviorHints": {"notWebReady": False}
+                        })
+            except Exception as e:
+                logger.error(f"Erro ao buscar na fonte Superflix: {e}")
+        
+        # Fonte: Netcine
         try:
             netcine_streams = search_link(id)
-            if netcine_streams: scrape_.extend(netcine_streams)
-        except Exception:
-            pass
+            if netcine_streams: 
+                scrape_.extend(netcine_streams)
+        except Exception as e: 
+            logger.error(f"Erro ao buscar na fonte Netcine: {e}")
 
-        # --- FONTE 2: GOFILMES ---
+        # Fonte: GoFilmes
         try:
             gofilmes_player_options = search_gofilmes(titles, type, season, episode)
-            if gofilmes_player_options:
-                for option in gofilmes_player_options:
-                    stream_url, stream_headers = resolve_gofilmes_stream(option['url'])
-                    if stream_url:
-                        scrape_.append({"name": option['name'], "url": stream_url, "behaviorHints": { "proxyHeaders": {"request": stream_headers} }})
-        except Exception:
-            pass
-
-        # --- FONTE 3: TOPFLIX ---
-        try:
-            topflix_streams = search_topflix(titles, type, season, episode)
-            if topflix_streams:
-                scrape_.extend(topflix_streams)
-        except Exception:
-            pass
+            for option in gofilmes_player_options:
+                stream_url, stream_headers = resolve_gofilmes_stream(option['url'])
+                if stream_url:
+                    scrape_.append({
+                        "name": option['name'], 
+                        "url": stream_url,
+                        "behaviorHints": {"proxyHeaders": {"request": stream_headers}}
+                    })
+        except Exception as e: 
+            logger.error(f"Erro ao buscar na fonte GoFilmes: {e}")
 
     return add_cors(JSONResponse(content={"streams": scrape_}))
 
