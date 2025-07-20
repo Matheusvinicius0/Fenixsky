@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 def search_topflix(titles, content_type, season=None, episode=None):
     """
     Busca e resolve streams do Topflix.
-    A lógica foi atualizada para extrair o ID da postagem de um local mais estável.
+    Adicionado 'Referer' na chamada ao balancer para funcionar em servidores.
     """
     base_url = "https://topflix.watch"
     
@@ -45,8 +45,6 @@ def search_topflix(titles, content_type, season=None, episode=None):
 
             page_text = page_response.text
 
-            # --- CORREÇÃO DEFINITIVA ---
-            # Método 1: Pega o ID da postagem do link 'AddComplaint', que é mais estável.
             post_id_match = re.search(r"AddComplaint\('(\d+)',", page_text)
             if post_id_match:
                 video_id = post_id_match.group(1)
@@ -54,7 +52,6 @@ def search_topflix(titles, content_type, season=None, episode=None):
                 logging.warning("ID da postagem (método AddComplaint) não encontrado.")
                 continue
 
-            # Método 2: Pega a URL do Balancer, que continua a mesma.
             balancer_match = re.search(r'const VideoBalancerUrl="([^"]+)"', page_text)
             if balancer_match:
                 balancer_url = balancer_match.group(1)
@@ -66,12 +63,15 @@ def search_topflix(titles, content_type, season=None, episode=None):
             
             player_loader_url = f"{balancer_url}player?id={video_id}"
             
-            # Para séries, o player precisa saber qual temporada/episódio carregar
             if content_type == 'series' and season and episode:
-                # O player usa indexação baseada em 0 (temporada 1 é 0, episódio 1 é 0)
                 player_loader_url += f"&season={season-1}&series={episode-1}"
 
-            loader_response = requests.get(player_loader_url, headers=headers, timeout=15)
+            # --- AQUI ESTÁ A CORREÇÃO ---
+            # Adicionamos o 'Referer' para simular um acesso legítimo vindo do Topflix
+            loader_headers = headers.copy()
+            loader_headers['Referer'] = search_url
+            
+            loader_response = requests.get(player_loader_url, headers=loader_headers, timeout=15)
             loader_response.raise_for_status()
             
             stream_match = re.search(r"flixPlayer\('([^']+)'", loader_response.text)
