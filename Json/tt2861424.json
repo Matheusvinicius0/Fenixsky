@@ -1,0 +1,796 @@
+{
+  "id": "tt2861424",
+  "type": "series",
+  "streams": [
+    {
+      "temporada": 1,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_119211550temp1ep1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_2324291072temp1ep2.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_32444201temp1ep3.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_4197619443temp1ep4.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_52847210809temp1ep5.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_62783225831temp1ep6.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_7119699647temp1ep7.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_81648615088temp1ep8.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 9,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_9204065860temp1ep9.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 10,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_10145365383temp1ep10.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 11,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_115048138temp1ep11.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_1205826999temp2ep1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_22906028692temp2ep2.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_374735284temp2ep3.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_4162727570temp2ep4.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_5106314734temp2ep5.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_62162027681temp2ep6.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_72429816465temp2ep7.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_83105222392temp2ep8.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 9,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_93265026055temp2ep9.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 10,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_102589010379temp2ep10.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_10568741temp3ep1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_26870478temp3ep2.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_38054570temp3ep3.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_48566801temp3ep4.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_59802354temp3ep5.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_68074844temp3ep6.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_78901456temp3ep7.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_86690321temp3ep8.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 9,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_98704125temp3ep9.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 10,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_102269870temp3ep10.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 4,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp4ep01.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 4,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp4ep02.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 4,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp4ep03.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 4,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp4ep04.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 4,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp4ep05.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 4,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp4ep06.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 4,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp4ep07.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 4,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp4ep08.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 4,
+      "episodio": 9,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp4ep09.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 4,
+      "episodio": 10,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp4ep10.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 5,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp5ep01.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 5,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp5ep02.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 5,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp5ep03.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 5,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp5ep04.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 5,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp5ep05.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 5,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp5ep06.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 5,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp5ep07.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 5,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp5ep08.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 5,
+      "episodio": 9,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp5ep09.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 5,
+      "episodio": 10,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/7/2799/2799_dub_temp5ep10.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 6,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_temp6ep01_dub.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 6,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_temp6ep02_dub.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 6,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_temp6ep03_dub.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 6,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_s06e04_dub.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 6,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_s06e05_dub.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 6,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_s06e06_dub.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 6,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_s06e07_dub.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 6,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_s06e08_dub.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 6,
+      "episodio": 9,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_s06e09_dub.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 6,
+      "episodio": 10,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_s06e10_dub.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 7,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2799/2799_s07e01_dub.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 7,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/2799/2799_rick-and-morty-s07e02-web-dl-1080p-x264-dual-5.1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 7,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/series/tt2861424/s07e03_dub.mp4"
+        }
+      ]
+    },
+    {
+      "temporada": 7,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/series/tt2861424/s07e04_dub.mp4"
+        }
+      ]
+    },
+    {
+      "temporada": 7,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/series/tt2861424/s07e05_dub.mp4"
+        }
+      ]
+    },
+    {
+      "temporada": 7,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/series/tt2861424/s07e06_dub.mp4"
+        }
+      ]
+    },
+    {
+      "temporada": 7,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/series/tt2861424/s07e07_dub.mp4"
+        }
+      ]
+    },
+    {
+      "temporada": 7,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/series/tt2861424/s07e08_dub.mp4"
+        }
+      ]
+    },
+    {
+      "temporada": 7,
+      "episodio": 9,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/series/tt2861424/s07e09_dub.mp4"
+        }
+      ]
+    },
+    {
+      "temporada": 7,
+      "episodio": 10,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/2799/2799_rick-and-morty-s07e10-web-dl-1080p-x264-dual-5.1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/2799/2799_rick-e-morty-s08e01-web-dl-1080p-x264-dual-5.1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/2799/2799_rick-e-morty-s08e02-web-dl-1080p-x264-dual-5.1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/2799/2799_rick-e-morty-s08e03-web-dl-1080p-x264-dual-5.1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/2799/2799_rick-e-morty-s08e04-web-dl-1080p-x264-dual-5.1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/2799/2799_rick-e-morty-s08e05-web-dl-1080p-x264-dual-5.1-repack.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/2799/2799_rick-e-morty-s08e06-web-dl-1080p-x264-dual-5.1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/2799/2799_rick-e-morty-s08e07-web-dl-1080p-x264-dual-5.1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/2799/2799_rick-e-morty-s08e08-web-dl-1080p-x264-dual-5.1.m3u8"
+        }
+      ]
+    }
+  ]
+}
