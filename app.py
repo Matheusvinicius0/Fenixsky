@@ -89,7 +89,8 @@ async def stream(type: str, id: str, request: Request):
         
         # --- Fonte: Topflix (para filmes e séries) ---
         try:
-            topflix_streams = search_topflix(titles, type, season, episode)
+            # ALTERAÇÃO AQUI: Passando o 'imdb_id' para a função
+            topflix_streams = search_topflix(imdb_id, titles, type, season, episode)
             if topflix_streams:
                 scrape_.extend(topflix_streams)
         except Exception as e:
@@ -111,7 +112,6 @@ async def stream(type: str, id: str, request: Request):
                 if stream_url:
                     stream_name = option['name']
                     
-                    # --- AQUI ESTÁ A LÓGICA DO AVISO ---
                     if 'mediafire.com' in stream_url:
                         stream_name += " (Só no Navegador)"
 
@@ -120,7 +120,6 @@ async def stream(type: str, id: str, request: Request):
                         "url": stream_url
                     }
                     
-                    # Adiciona os headers apenas se o método fallback os retornar
                     if stream_headers:
                         stream_obj["behaviorHints"] = {"proxyHeaders": {"request": stream_headers}}
                     
