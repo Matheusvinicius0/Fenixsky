@@ -8,14 +8,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_01235798temp1ep1.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s1e1/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_01235798temp1ep1.m3u8"
         }
       ]
     },
@@ -25,14 +18,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_06587498temp1ep2.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s1e2/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_06587498temp1ep2.m3u8"
         }
       ]
     },
@@ -42,14 +28,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_17895498temp1ep3.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s1e3/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_17895498temp1ep3.m3u8"
         }
       ]
     },
@@ -59,14 +38,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_54980458temp1ep4.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s1e4/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_54980458temp1ep4.m3u8"
         }
       ]
     },
@@ -76,14 +48,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_69877098temp1ep5.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s1e5/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_69877098temp1ep5.m3u8"
         }
       ]
     },
@@ -93,14 +58,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_84698785temp1ep6.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s1e6/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_84698785temp1ep6.m3u8"
         }
       ]
     },
@@ -110,14 +68,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_65024778temp1ep7.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s1e7/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_65024778temp1ep7.m3u8"
         }
       ]
     },
@@ -127,14 +78,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_08704685temp1ep8.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s1e8/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_08704685temp1ep8.m3u8"
         }
       ]
     },
@@ -144,14 +88,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_89845762temp1ep9.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s1e9/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_89845762temp1ep9.m3u8"
         }
       ]
     },
@@ -161,14 +98,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_74898435temp1ep10.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s1e10/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_74898435temp1ep10.m3u8"
         }
       ]
     },
@@ -178,14 +108,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_896478604temp1ep11.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s1e11/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_896478604temp1ep11.m3u8"
         }
       ]
     },
@@ -195,14 +118,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_65804632temp1ep12.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s1e12/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_65804632temp1ep12.m3u8"
         }
       ]
     },
@@ -212,14 +128,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_05478980temp2ep1.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s2e1/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_05478980temp2ep1.m3u8"
         }
       ]
     },
@@ -229,14 +138,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_10459878temp2ep2.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s2e2/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_10459878temp2ep2.m3u8"
         }
       ]
     },
@@ -246,14 +148,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_24698578temp2ep3.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s2e3/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_24698578temp2ep3.m3u8"
         }
       ]
     },
@@ -263,14 +158,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_35478965temp2ep4.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s2e4/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_35478965temp2ep4.m3u8"
         }
       ]
     },
@@ -280,14 +168,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_54506878temp2ep5.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s2e5/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_54506878temp2ep5.m3u8"
         }
       ]
     },
@@ -297,14 +178,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_65074898temp2ep6.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s2e6/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_65074898temp2ep6.m3u8"
         }
       ]
     },
@@ -314,14 +188,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_70658984temp2ep7.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s2e7/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_70658984temp2ep7.m3u8"
         }
       ]
     },
@@ -331,14 +198,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_84896587temp2ep8.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s2e8/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_84896587temp2ep8.m3u8"
         }
       ]
     },
@@ -348,14 +208,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_36074858temp2ep9.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s2e9/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_36074858temp2ep9.m3u8"
         }
       ]
     },
@@ -365,14 +218,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_36687804temp2ep10.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s2e10/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_36687804temp2ep10.m3u8"
         }
       ]
     },
@@ -382,14 +228,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_24698748temp2ep11.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s2e11/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_24698748temp2ep11.m3u8"
         }
       ]
     },
@@ -399,14 +238,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_60625878temp2ep12.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s2e12/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_60625878temp2ep12.m3u8"
         }
       ]
     },
@@ -416,14 +248,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_74856901temp3ep1.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s3e1/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_74856901temp3ep1.m3u8"
         }
       ]
     },
@@ -433,14 +258,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_05468748temp3ep2.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s3e2/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_05468748temp3ep2.m3u8"
         }
       ]
     },
@@ -450,14 +268,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_62487598temp3ep3.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s3e3/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_62487598temp3ep3.m3u8"
         }
       ]
     },
@@ -467,14 +278,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_45065878temp3ep4.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s3e4/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_45065878temp3ep4.m3u8"
         }
       ]
     },
@@ -484,14 +288,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_75980456temp3ep5.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s3e5/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_75980456temp3ep5.m3u8"
         }
       ]
     },
@@ -501,14 +298,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_36041287temp3ep6.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s3e6/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_36041287temp3ep6.m3u8"
         }
       ]
     },
@@ -518,14 +308,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_96850478temp3ep7.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s3e7/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_96850478temp3ep7.m3u8"
         }
       ]
     },
@@ -535,14 +318,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_58987452temp3ep8.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s3e8/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_58987452temp3ep8.m3u8"
         }
       ]
     },
@@ -552,14 +328,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_66320478temp3ep9.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s3e9/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_66320478temp3ep9.m3u8"
         }
       ]
     },
@@ -569,14 +338,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_80401365temp3ep10.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s3e10/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_80401365temp3ep10.m3u8"
         }
       ]
     },
@@ -586,14 +348,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_43259874temp3ep11.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s3e11/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_43259874temp3ep11.m3u8"
         }
       ]
     },
@@ -603,14 +358,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_56210047temp3ep12.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s3e12/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_56210047temp3ep12.m3u8"
         }
       ]
     },
@@ -620,14 +368,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_1261223834temp4ep1.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s4e1/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_1261223834temp4ep1.m3u8"
         }
       ]
     },
@@ -637,14 +378,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_2143865408temp4ep2.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s4e2/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_2143865408temp4ep2.m3u8"
         }
       ]
     },
@@ -654,14 +388,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_3262509180temp4ep3.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s4e3/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_3262509180temp4ep3.m3u8"
         }
       ]
     },
@@ -671,14 +398,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_42269012239temp4ep4.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s4e4/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_42269012239temp4ep4.m3u8"
         }
       ]
     },
@@ -688,14 +408,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_52220530148temp4ep5.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s4e5/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_52220530148temp4ep5.m3u8"
         }
       ]
     },
@@ -705,14 +418,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_62090630140temp4ep6.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s4e6/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_62090630140temp4ep6.m3u8"
         }
       ]
     },
@@ -722,14 +428,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_7312704920temp4ep7.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s4e7/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_7312704920temp4ep7.m3u8"
         }
       ]
     },
@@ -739,14 +438,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_81139627847temp4ep8.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s4e8/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_81139627847temp4ep8.m3u8"
         }
       ]
     },
@@ -756,14 +448,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_9677619756temp4ep9.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s4e9/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_9677619756temp4ep9.m3u8"
         }
       ]
     },
@@ -773,14 +458,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_101130427291temp4ep10.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s4e10/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_101130427291temp4ep10.m3u8"
         }
       ]
     },
@@ -790,14 +468,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_1169093284temp4ep11.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s4e11/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_1169093284temp4ep11.m3u8"
         }
       ]
     },
@@ -807,14 +478,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_12711414633temp4ep12.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s4e12/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_12711414633temp4ep12.m3u8"
         }
       ]
     },
@@ -824,14 +488,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_12777713788temp5ep1.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s5e1/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_12777713788temp5ep1.m3u8"
         }
       ]
     },
@@ -841,14 +498,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_22755315812temp5ep2.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s5e2/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_22755315812temp5ep2.m3u8"
         }
       ]
     },
@@ -858,14 +508,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_3128601184temp5ep3.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s5e3/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_3128601184temp5ep3.m3u8"
         }
       ]
     },
@@ -875,14 +518,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_4278392670temp5ep4.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s5e4/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_4278392670temp5ep4.m3u8"
         }
       ]
     },
@@ -892,14 +528,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_5497426037temp5ep5.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s5e5/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_5497426037temp5ep5.m3u8"
         }
       ]
     },
@@ -909,14 +538,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_61145319704temp5ep6.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s5e6/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_61145319704temp5ep6.m3u8"
         }
       ]
     },
@@ -926,14 +548,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_7162565299temp5ep7.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s5e7/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_7162565299temp5ep7.m3u8"
         }
       ]
     },
@@ -943,14 +558,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_8233993667temp5ep8.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s5e8/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_8233993667temp5ep8.m3u8"
         }
       ]
     },
@@ -960,14 +568,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_9477822465temp5ep9.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s5e9/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_9477822465temp5ep9.m3u8"
         }
       ]
     },
@@ -977,14 +578,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_48598574temp5ep10.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s5e10/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_48598574temp5ep10.m3u8"
         }
       ]
     },
@@ -994,14 +588,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_74789600temp5ep11.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s5e11/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_74789600temp5ep11.m3u8"
         }
       ]
     },
@@ -1011,14 +598,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_41780014temp5ep12.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s5e12/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_41780014temp5ep12.m3u8"
         }
       ]
     },
@@ -1028,14 +608,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_14702568temp6ep1.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s6e1/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_14702568temp6ep1.m3u8"
         }
       ]
     },
@@ -1045,14 +618,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_25904787temp6ep2.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s6e2/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_25904787temp6ep2.m3u8"
         }
       ]
     },
@@ -1062,14 +628,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_65801456temp6ep3.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s6e3/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_65801456temp6ep3.m3u8"
         }
       ]
     },
@@ -1079,14 +638,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_95870456temp6ep4.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s6e4/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_95870456temp6ep4.m3u8"
         }
       ]
     },
@@ -1096,14 +648,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_87890415temp6ep5.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s6e5/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_87890415temp6ep5.m3u8"
         }
       ]
     },
@@ -1113,14 +658,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_96870124temp6ep6.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s6e6/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_96870124temp6ep6.m3u8"
         }
       ]
     },
@@ -1130,14 +668,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_85041236temp6ep7.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s6e7/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_85041236temp6ep7.m3u8"
         }
       ]
     },
@@ -1147,14 +678,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_70456802temp6ep8.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s6e8/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_70456802temp6ep8.m3u8"
         }
       ]
     },
@@ -1164,14 +688,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_80456021temp6ep9.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s6e9/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_80456021temp6ep9.m3u8"
         }
       ]
     },
@@ -1181,14 +698,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_40790636temp6ep10.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s6e10/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_40790636temp6ep10.m3u8"
         }
       ]
     },
@@ -1198,14 +708,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_74085698temp6ep11.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s6e11/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_74085698temp6ep11.m3u8"
         }
       ]
     },
@@ -1215,14 +718,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_04150478temp6ep12.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s6e12/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_04150478temp6ep12.m3u8"
         }
       ]
     },
@@ -1232,14 +728,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_26570456temp7ep1.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s7e1/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_26570456temp7ep1.m3u8"
         }
       ]
     },
@@ -1249,14 +738,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_25478968temp7ep2.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s7e2/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_25478968temp7ep2.m3u8"
         }
       ]
     },
@@ -1266,14 +748,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_10478568temp7ep3.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s7e3/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_10478568temp7ep3.m3u8"
         }
       ]
     },
@@ -1283,14 +758,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_60470452temp7ep4.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s7e4/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_60470452temp7ep4.m3u8"
         }
       ]
     },
@@ -1300,14 +768,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_96870145temp7ep5.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s7e5/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_96870145temp7ep5.m3u8"
         }
       ]
     },
@@ -1317,14 +778,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_74014522temp7ep6.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s7e6/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_74014522temp7ep6.m3u8"
         }
       ]
     },
@@ -1334,14 +788,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_30210475temp7ep7.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s7e7/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_30210475temp7ep7.m3u8"
         }
       ]
     },
@@ -1351,14 +798,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_98074522temp7ep8.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s7e8/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_98074522temp7ep8.m3u8"
         }
       ]
     },
@@ -1368,14 +808,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_65870458temp7ep9.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s7e9/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_65870458temp7ep9.m3u8"
         }
       ]
     },
@@ -1385,14 +818,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_36087048temp7ep10.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s7e10/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_36087048temp7ep10.m3u8"
         }
       ]
     },
@@ -1402,14 +828,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_74854685temp7ep11.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s7e11/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_74854685temp7ep11.m3u8"
         }
       ]
     },
@@ -1419,14 +838,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_20210789temp7ep12.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s7e12/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_20210789temp7ep12.m3u8"
         }
       ]
     },
@@ -1436,14 +848,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_1324634024temp8ep1.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s8e1/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_1324634024temp8ep1.m3u8"
         }
       ]
     },
@@ -1453,14 +858,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_252959195temp8ep2.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s8e2/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_252959195temp8ep2.m3u8"
         }
       ]
     },
@@ -1470,14 +868,7 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_3313832713temp8ep3.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s8e3/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_3313832713temp8ep3.m3u8"
         }
       ]
     },
@@ -1487,14 +878,17 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_4499029103temp8ep4.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s8e4/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_4499029103temp8ep4.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_5784218152temp8ep5.m3u8"
         }
       ]
     },
@@ -1504,14 +898,37 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_62858417375temp8ep6.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s8e6/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_62858417375temp8ep6.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_758225245temp8ep7.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_81865612915temp8ep8.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 9,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_91896718885temp8ep9.m3u8"
         }
       ]
     },
@@ -1521,14 +938,27 @@
       "streams": [
         {
           "name": "Topflix - Player",
-          "url": "https://sempra.pro/a1/out/old/6/2802/2802_1027617841temp8ep10.m3u8",
-          "behaviorHints": {
-            "proxyHeaders": {
-              "request": {
-                "Referer": "https://topflix.watch/series/assistir-online-dexter/--s8e10/"
-              }
-            }
-          }
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_1027617841temp8ep10.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 11,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_11246521009temp8ep11.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 8,
+      "episodio": 12,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/old/6/2802/2802_1223885492temp8ep12.m3u8"
         }
       ]
     }
