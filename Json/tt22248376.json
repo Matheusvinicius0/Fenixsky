@@ -1,0 +1,126 @@
+{
+  "id": "tt22248376",
+  "type": "series",
+  "streams": [
+    {
+      "temporada": 1,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/4492/4492_frieren.beyond.journeys.end.s01e01.1080p.cr.web-dl.aac2.0.hin-tam-eng-jpn-ger-spa-spa-fra-por.h.264.msubs-toonshub-1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/4492/4492_frieren.beyond.journeys.end.s01e02.1080p.cr.web-dl.aac2.0.hin-tam-eng-jpn-ger-spa-spa-fra-por.h.264.msubs-toonshub-1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/4492/4492_frieren.beyond.journeys.end.s01e03.1080p.cr.web-dl.aac2.0.hin-tam-eng-jpn-ger-spa-spa-fra-por.h.264.msubs-toonshub-1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/4492/4492_frieren.beyond.journeys.end.s01e04.1080p.cr.web-dl.aac2.0.hin-tam-eng-jpn-ger-spa-spa-fra-por.h.264.msubs-toonshub-1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/4492/4492_frieren.beyond.journeys.end.s01e05.1080p.cr.web-dl.aac2.0.hin-tam-eng-jpn-ger-spa-spa-fra-ita-por.h.264.msubs-toonshub-1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/4492/4492_frieren.beyond.journeys.end.s01e06.1080p.cr.web-dl.aac2.0.hin-tam-eng-jpn-ger-spa-spa-fra-ita-por.h.264.msubs-toonshub-1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/4492/4492_frieren.beyond.journeys.end.s01e07.1080p.cr.web-dl.aac2.0.hin-tam-eng-jpn-ger-spa-spa-fra-ita-por.h.264.msubs-toonshub-1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/4492/4492_frieren.beyond.journeys.end.s01e08.1080p.cr.web-dl.aac2.0.hin-tam-eng-jpn-ger-spa-spa-fra-ita-por.h.264.msubs-toonshub-1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 9,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/4492/4492_frieren.beyond.journeys.end.s01e09.1080p.cr.web-dl.aac2.0.hin-tam-eng-jpn-ger-spa-spa-fra-ita.h.264.msubs-toonshub-1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 10,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/4492/4492_frieren.beyond.journeys.end.s01e10.1080p.cr.web-dl.aac2.0.hin-tam-eng-jpn-ger-spa-spa-fra-ita-por.h.264.msubs-toonshub-1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 11,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/4492/4492_frieren.beyond.journeys.end.s01e11.1080p.cr.web-dl.aac2.0.hin-tam-eng-jpn-ger-spa-spa-fra-ita-por.h.264.msubs-toonshub-1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 12,
+      "streams": [
+        {
+          "name": "Topflix - Player",
+          "url": "https://sempra.pro/a1/out/6/4492/4492_frieren-beyond-journeys-end-s01e12-a-real-hero-1080p-cr-web-dl-x264-hindi-japanese-english-french-german-portuguese-spanish-italian-spanish-tamil-aac-2.0-128kbps-msubs-toonshub-1.m3u8"
+        }
+      ]
+    }
+  ]
+}
