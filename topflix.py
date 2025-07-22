@@ -6,7 +6,6 @@ import logging
 import json
 import os
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def search_topflix(imdb_id, titles, content_type, season=None, episode=None):
     """
@@ -28,10 +27,9 @@ def search_topflix(imdb_id, titles, content_type, season=None, episode=None):
                     return local_data.get('streams', [])
 
         except Exception as e:
-            logging.error(f"Erro ao ler JSON de {json_path}: {e}")
+           
 
     # Se não encontrou localmente, busca online
-    logging.info(f"Nenhum JSON local encontrado. Buscando online: {imdb_id}")
     base_url = "https://topflix.watch"
     path = 'filmes' if content_type == 'movie' else 'series'
 
@@ -84,7 +82,6 @@ def search_topflix(imdb_id, titles, content_type, season=None, episode=None):
             }]
 
         except Exception as e:
-            logging.error(f"Erro ao buscar no Topflix: {e}")
             continue
 
     return []
