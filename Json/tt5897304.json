@@ -1,0 +1,136 @@
+{
+  "id": "tt5897304",
+  "type": "series",
+  "streams": [
+    {
+      "temporada": 2,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "COS.TV",
+          "url": "https://videocdn.cos.tv/video/45444446178298880.mp4?Expires=1753307252&Signature=NPy~fpMYmYvc0K3qCt2oGa2g1g9ePcQ3rAtn2DYAZFEwlf7TT1hy~RMDB5lypVHVV5M6bppCB4PmI3SZu0SfQJ8h9NZwuWfnmFKfxiEYMGVuiSmzeDGYRGyZRfXY2llJqjStq-t3HhPaP5UPdD3G6Pr9nO2K5w0buuVbCvEO85HOl3Y9ledFwTIfxeupkwDfmu1hlVkfgo5e10BiUpw~CxME8mZxsI0W~XLKsLMxq6UeIg8x2qMmm9vFyERmBdyabPu4pPV-OsvCNZ06sW9P1Vakq9DbcWjCDFG10n2H~eAIoUst17DcGkmzR7x~4uYm-f1PjGm33NxiSEt1VDRvBA__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 12,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/45125004664818688.mp4?Expires=1753307252&Signature=F6sKyNJ7wtI-ZTM--WsQDjKrRm92f960mm0oYI1LjzPs6SfPZogzeVvS8lCWikTTGWvUUPo9I6Ts-WNQpZ2ykohlWFMhrkfACC8PIckGM8LSf5QomrKQkZUEXoPpRuyEy6oGZ8KH2cxUIkUpx5bZAmtcsjbHC5Hbrm3W8KLhi0V98CXaXhH-vAxbIoOtFuyhGUATke9zN1gWYQ8jdExpclGX3GF7SRM6yxGWZAh7p0VdrNDH8vm9smaK~axF-1nAGvW0A2ugxcICsOY3hK9HWOibJy4O6UFvfx06-R8WfyPi6lwPQJQNw7fZvyWWYymiKkNjU~~9xoxFSabrPyKeYw__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 11,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/45124964528475136.mp4?Expires=1753307252&Signature=NVHhCZS4rd~KZd4-YdYGLBWBu5xkzuUPbjPPmec8W~V~P~lBRWXHP~4IpC8GhkkJ3bWmI7TXvsUgrWsKgTzW4pjgDphT1X0jQASWn70nneQiJbuTriiGL~G4YOm0GAsQVzbmKiuyydx-Fa2nw0aqqGAapfsUO7UDDzxnMYBROlcPt44Ygy0mBTlcWdW9GzSK06RiPF8afxF9xI6F8WyyODOh2QoZxTQqJmG0DoYJgVoLvlzT91xdR02T31NL6VpejQnyhRdX7OObQP9~hnZprxYzzxj5UAXa3Sti6qn~3-4qMF73xppgfP4IIsZA1L9BLmAiyAVNXQPiTEiZtYrABg__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 10,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/45124915042241536.mp4?Expires=1753307252&Signature=Fdax9JKO~lWfZLrj1SoRn1hN7ffQ8zR7ne3J9P263BE~qeFfqD5q5ky6aDG5BYPZZ0RF1tFNvLNTy2JEac1J0ZwAy-CH4e2wgvD0bfoqYHUXNVqTjmRdMfj4QswfWjGXPCAgg-RPQSzE26cEmuJB3tghh6IBQeTtkuXqitGRUQjPAJJb6x43o2YL6cNm19Ux35CNQRJTHi0QTKCku7Zs3TsyD~TkNhjfRpHz-wKpPXYbmEwfhy8fYX9ff0B7ptjIAFj6iNDy95XI6rxxiQXcVlYE8nqlV~Z96Qx8lgiF~2xfqCAkY~b0FXDoB~h5qldSWqkhpfS3S7wP3a8iwdPXnw__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 9,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/45097932917623808.mp4?Expires=1753307252&Signature=ckc46CGfuXIDaZDw7tQCxIJIEA~Ingoyh-XtSHXhIN7W8MDKiYqr-szI49ugf0u7RUrMggGMDXx23t7y6DYKXv4g3sKbjuIXhywHqK4yJ5STZPUJ3QjF2Sdo-45Bujhkczi7jc0foXYM1YJFkgJLckNnepcJWvTPfYc6hpKS1whetOEpgTlYpm7CE0Voov4rQxIqBU2CAZtt-hAb9mSL50I5Uy9DbzxUKZTPu5trTyh0VXd0Pxi~4LPgcbUPXF4REiD799N6r8k3g441zt0twaxF6NzOL34dykLe2zTRsLiaT2xuWwHRrpY356yCSwFPSJ1EojY9NI-vqPHVOBMOyw__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/45097911486565376.mp4?Expires=1753307252&Signature=VlLI3g8ZsguvXrZDEgzPH9SEUirQn3vM0EOhe6mrt1oVCGlK80VGO2BiCUe-Xfz30Q7QYXA6lrPc-u5H6jZqhAJAVSZQdZgKzjdIwvz4UMTwNPi-6mpCic9sklCfU~D~rAJIAaghTSa6uhjYOk8P70xYvskH4V3b5Fq20pggh~ce8sGpjFT2Eer6JzH7qVkcjeSfjaa7TFEBsKg0c55JJ1AuO3uzB8xS2UTkz08j81prM0aYAjJBZAeelSofKRCg3wr7IKFcULjfo3ZRXlNg1wL8CbCIv7AOHbnp7vDoN0EF3sAsc0pPFBimNUq0hBaab7lU9JWYhjMXO3-UPklI1g__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/45097862518590464.mp4?Expires=1753307252&Signature=aJPTQan-yboLwh~~SfoVopL~~M9msEsgh38VBdsJiX8l7YXMpkZzSiUUqyxISx1-l~E-h-zdBl0n-sExh-Wi3T5h0Aiiz3BbFSiZ30L~ieCyHKCnksJqgiLX0Zc2aQvtbgT7F0Pt3n~6msoj1lkueuJHvWy3kM38AJdAa4dqD-EHFOdFlul3dkAQX-3QpMgImaSbJ2YjZQWUJuBjD4J2AfXgSUyNhEpGknyh2OPOL-mkTsuXtGCsIZOv~5PM0jYItbfIcxPPchAAmiyL1KGRdxWXQpX0eatxOr6xjKshxkgkuC69ba5ies5S72fx3bgPpvyPxGgIN16bHl2uv-Wb7A__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/44986209838353408.mp4?Expires=1753307252&Signature=d5DE6DFBPo0czAcDSnEf056nFtM7mvtJ14Ef-kLGn~Y-A7z-0Yc3~ejbCZhBO5L3q~Lt8yhSrEBz2TdD5cQLFFn~WaV39TBjKk4NJTsazTGYUpBDAdC~1aOtMgX8bF5fIrQpRWI4J96If1xjHRDyoF4ItRFIL5mKJCFXmOCTKrP6Pa5YIEDYyg2ODzmrrDCUW81~6wFnEGYVctCPgRZMhiZQZG3dz7XhV8X9mJA1hi2M6vlory0PBWaR2JiHgDtp3fobblA4LQl9nBp9J2QWxFD4U0vEpYx9dfEKsGeihZu0EVbWsqBN0VfkVmP2xqBkgUJNGKxgxIIbAfrUQcS~nw__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/44986137783618560.mp4?Expires=1753307252&Signature=OkcvC7Iw70co7VqawbsS98qWbJTzRGDbUdPgi59moYTcjkrm3VEqVTr8aS5AJbyXROCJx1YsouZYWQmUPuLhPmMUb8jaXM0ioQthbdfDewQC7B2P17qVHVsg9RpWdZG0kTID1WMTUVRbSpE9vI4-zD9WK0aBoSs5qPOGCfe5ddDitLmWnvqou~royvmiqjELqk~7ssjsHtDQEeZJw6gUiHTKB7v-cw0TrD2huSFCIX83OzgUlPyiyV1zD8-VYupE54bxd7YroClOTeEXM29IHUE35wU1DQlq9BM6QrsEw3Fbw-yfbDC3SdxXtF4wC8Q1KXbhMI70oc2heNS5PdLvqA__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/44986008421321728.mp4?Expires=1753307252&Signature=F1oSLDnlOc8jaswew~VA-sURcEoYyi4h57pmNo3qGdSu5ml8MJh1uLa5dzSLNYBI5rDVXiCbVHP-hurUu5VJtMhTB2pqnx1fGvZ3Tb1FLSIG5UNdmIGGqBCM6nDMjMvmCPG5bQOSWfjyiZFr~vUcqFXE0a7DeSpgdKm7-bhIiM0lTvKBWZXTY87lbYzqlp7-OdC6zNei0ZUOxHuDdOR26sUe6wf59CxBiPYVeuJGPdvgDBNYSBjlFX71Hf8VFgAA3tIx4ApsFxnSUcpDUcIrzNrNibS7Huq9XgxPjv9NfHx2lVNzXUa4q~uZn3I8M40qfmTGxjBx9rKQzd9E~1fi3g__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://tencent.cos.tv/fa6ac7b2vodtransuse1259667713/1ba2847b243791581643951567/v.f30.mp4?t=688164d7&sign=76396c2b1277d6ab0d224d3c1380b8ff"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/44965761518717952.mp4?Expires=1753307252&Signature=HCYs4SM006p3ozDd20u6OYlZTcGXgYrS7tqclfCdC212rdU3GWPmKFrUt-boj~5V~WnuWb6Z1PltP2bIHlXYRkHhdOcEKH5RUDcUWM~fYuRWkEvgOHh4MP-uSbsUBRau~l378d5yChxuQNI8D1VcavRhB0koymhjjr7~sWHV9yWCVcltb7FRlt0umxU0sMv5og14dyAIuZ4Wz2I20Y9aR7UE3TeBCDCEKjeAg7MXDqq0nQwq1sWbzMSOWW36i~8MODS3WeTNPxH5PAq48gQ7OejJcY306sqaIOgJ5kXT8a75lnUC1SEA3VxtEboF4OkSqr5VcEZwNiTyWi~bfRo04g__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/44965617962896384.mp4?Expires=1753307252&Signature=TWT4qsC7JhIk~7VrSLFhNp7b5JN95U8UURDVjthIGIzhBJGpPjriaCjl2ve5IAJAMa6A~4ZD3YHjrO61phL1Lq98Cb24r64YWwxMmgKY~Sk~tKJ~N7C1~5qzO1Nm8tdp4MlDq3cRS69e5rDxo6kGMAp-V69tY9GiswSxnP3PgPku0cNGJw5lst8PsmanPxQAA6C7xXhOxCcr9YkIY2sZjdZIS7~g4vaSp72BaYpkolJjNOHYs1Uoh-2n1iKMh3NNt3RleQkHiPgGze0fPwVrJJGQNhvV5RP90F2BL8N-0ZhpwztFgT5Cw1M2pIcJ64tSxLnyrPTgslxMKqF~0HlmeQ__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
+    }
+  ]
+}
