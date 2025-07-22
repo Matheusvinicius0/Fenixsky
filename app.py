@@ -8,21 +8,12 @@ import requests
 import re
 from html import unescape
 
-# Importações dos seus módulos
+# Importações dos seus módulos (sem as de COS.TV)
 from netcine import catalog_search, search_link, search_term
 from gofilmes import search_gofilmes, resolve_stream as resolve_gofilmes_stream
 from topflix import search_topflix
 
-# --- Novas importações para o COS.TV ---
-from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-
-VERSION = "0.0.4"
+VERSION = "0.0.4" # A versão pode ser atualizada se desejar
 
 MANIFEST = {
     "id": "com.fenixsky", "version": VERSION, "name": "FENIXSKY",
@@ -50,7 +41,7 @@ def add_cors(response: Response):
     response.headers["Access-Control-Allow-Credentials"] = "true"
     return response
 
-# --- FUNÇÃO PARA STREAMTAPE ---
+# --- FUNÇÃO PARA STREAMTAPE (mantida pois pode ser útil para outras fontes) ---
 def resolve_streamtape_link(player_url: str):
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
@@ -72,63 +63,6 @@ def resolve_streamtape_link(player_url: str):
         return {"name": "Streamtape Robusto", "url": direct_video_url, "behaviorHints": {"proxyHeaders": {"request": {"User-Agent": "Mozilla/5.0", "Referer": player_url}}}}
     except Exception:
         return None
-
-# --- FUNÇÕES PARA O COS.TV ---
-def resolve_costv_link(page_url: str):
-    """
-    Extrai o link de vídeo direto da meta tag 'og:video' de uma página de vídeo específica do COS.TV.
-    """
-    try:
-        headers = {'User-Agent': 'Mozilla/5.0'}
-        page_content = requests.get(page_url, headers=headers, timeout=10).text
-        match = re.search(r'<meta property="og:video" content="(.*?)"', page_content)
-
-        if match:
-            video_url = unescape(match.group(1))
-            return {"url": video_url}
-        else:
-            return None
-    except Exception:
-        return None
-
-def search_costv_channel_with_selenium(channel_url: str, search_title: str):
-    """
-    Usa Selenium para carregar dinamicamente a página do canal e encontrar vídeos correspondentes.
-    """
-    found_videos = []
-    options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--disable-dev-shm-usage')
-    options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
-    
-    driver = None
-    try:
-        service = Service()
-        driver = webdriver.Chrome(service=service, options=options)
-        driver.get(channel_url)
-
-        WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'a[href*="/videos/play/"]')))
-        
-        html_content = driver.page_source
-        soup = BeautifulSoup(html_content, 'html.parser')
-        video_cards = soup.find_all('a', href=re.compile(r'^/videos/play/\d+'))
-
-        for card in video_cards:
-            title_div = card.find('div', class_='text--primary')
-            if title_div:
-                video_title = title_div.get_text(strip=True)
-                if search_title.lower() == video_title.lower():
-                    relative_link = card.get('href')
-                    full_url = f"https://cos.tv{relative_link}"
-                    result = {"title": video_title, "url": full_url}
-                    found_videos.append(result)
-    except (TimeoutException, Exception):
-        pass # Ignora erros de timeout ou outros erros do Selenium
-    finally:
-        if driver:
-            driver.quit()
-    return found_videos
 
 @app.get("/", response_class=HTMLResponse)
 @limiter.limit(rate_limit)
@@ -202,36 +136,7 @@ async def stream(type: str, id: str, request: Request):
         except Exception:
             pass
         
-        # --- FONTE DINÂMICA: COS.TV ---
-        try:
-            costv_channel_url = "https://cos.tv/channel/44965443319800832"
-            search_title = ""
-            if type == 'series' and season and episode:
-                search_title = f"{titles[0]} Dublado Temporada {season} Episódio {episode}"
-            elif type == 'movie':
-                search_title = titles[0]
-
-            if search_title:
-                found_videos = search_costv_channel_with_selenium(costv_channel_url, search_title)
-                for video_info in found_videos:
-                    stream_data = resolve_costv_link(video_info['url'])
-                    if stream_data and 'url' in stream_data:
-                        stream_name = "COS.TV"
-                        title_lower = video_info['title'].lower()
-                        if "dublado" in title_lower:
-                            stream_name += " - Dublado"
-                        elif "legendado" in title_lower:
-                            stream_name += " - Legendado"
-                        
-                        if type == 'series' and season and episode:
-                            stream_name += f" S{season} E{episode}"
-                        
-                        scrape_.append({
-                            "name": stream_name,
-                            "url": stream_data['url']
-                        })
-        except Exception:
-            pass
+        # --- Bloco do COS.TV foi removido daqui ---
 
     return add_cors(JSONResponse(content={"streams": scrape_}))
 
