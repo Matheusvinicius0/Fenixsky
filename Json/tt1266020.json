@@ -3,20 +3,44 @@
   "type": "series",
   "streams": [
     {
-      "name": "COS.TV - Parks and Recreation Dublado Temporada 1 Episódio 4",
-      "url": "https://videocdn.cos.tv/video/62756490597944320.mp4?Expires=1754015148&Signature=dqVXXeJYRfwisPJMfh4FCcoUBUHprkl1uExAMoU~5Tiop2C-us7fQWrVvG8be5x1sa5-yfEXr7b10ALlhQ~Wooj3yVW7o~PB2S9c75TAAF42d9U-GK8tClUhz82V55zXbeaVH1IgL1EKM1BuUpnM-X4kO5LJqmUAtu0rY9DUVt1x1Be8nQIU5zMiOgYsWbwoKAAmbG3aN-JhFwrdpsmepGb5Pm77xQugBkchJ4grwYkfydROIB3-264hPZIuOr4pLOOVnUmChIC9Re0Q1-cv2Ej03nkp8yr6DjqdXzjs4dKIERczTn9qh~bZVLjDcYWzO-iy5WdRXodz-LKIQCg5bA__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+      "temporada": 1,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/62756490597944320.mp4?Expires=1754015148&Signature=dqVXXeJYRfwisPJMfh4FCcoUBUHprkl1uExAMoU~5Tiop2C-us7fQWrVvG8be5x1sa5-yfEXr7b10ALlhQ~Wooj3yVW7o~PB2S9c75TAAF42d9U-GK8tClUhz82V55zXbeaVH1IgL1EKM1BuUpnM-X4kO5LJqmUAtu0rY9DUVt1x1Be8nQIU5zMiOgYsWbwoKAAmbG3aN-JhFwrdpsmepGb5Pm77xQugBkchJ4grwYkfydROIB3-264hPZIuOr4pLOOVnUmChIC9Re0Q1-cv2Ej03nkp8yr6DjqdXzjs4dKIERczTn9qh~bZVLjDcYWzO-iy5WdRXodz-LKIQCg5bA__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
     },
     {
-      "name": "COS.TV - Parks and Recreation Dublado Temporada 1 Episódio 3",
-      "url": "https://videocdn.cos.tv/video/62756394331065344.mp4?Expires=1754014708&Signature=HwF39ErDYzW57AeQHmYMBW5N0YqDrtFTPQOKHcWc1r23aQvyDN8OMPpeONS5y4n6k7eoMpNgr9G~LyRDeB9~fm7DvjPSbWPFanP6XEzprr8BztCWxLSue7HJ9XjZGDz7w3BMsJX6cHsJI2~1V5A-juj0eWq8u6ButdkWILgzXmMnkGgdhe4yZaB0g6Y6SOOIFwjp04WFEVSU4tfrk7xRGrRF~s0E30H5zn7RcrFFOy07e0me-r7NY629K2y-sNMw~nWqI7yLORbBoQL-Qw2KpNXX7L-07-MKVTWRsVAcjvbOMqcdE~ksZO-HUi1Ug~AaOWOaE49lb7CZUJc2mViYvA__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+      "temporada": 1,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/62756394331065344.mp4?Expires=1754014708&Signature=HwF39ErDYzW57AeQHmYMBW5N0YqDrtFTPQOKHcWc1r23aQvyDN8OMPpeONS5y4n6k7eoMpNgr9G~LyRDeB9~fm7DvjPSbWPFanP6XEzprr8BztCWxLSue7HJ9XjZGDz7w3BMsJX6cHsJI2~1V5A-juj0eWq8u6ButdkWILgzXmMnkGgdhe4yZaB0g6Y6SOOIFwjp04WFEVSU4tfrk7xRGrRF~s0E30H5zn7RcrFFOy07e0me-r7NY629K2y-sNMw~nWqI7yLORbBoQL-Qw2KpNXX7L-07-MKVTWRsVAcjvbOMqcdE~ksZO-HUi1Ug~AaOWOaE49lb7CZUJc2mViYvA__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
     },
     {
-      "name": "COS.TV - Parks and Recreation Dublado Temporada 1 Episódio 2",
-      "url": "https://videocdn.cos.tv/video/62756172712168448.mp4?Expires=1754013831&Signature=Ku1GpR~Z8MnOUu~Ef0z7OnJXt7K96vL0ybQzuwsnOQh8GKT10WH3H7k7keB-8fqpoOVclDEvfh0siXgwWQseyY8nIwvG2YEBiMMKgDfHZSbhwSlUrN4i2ipC1Jd0vkbjJWbCtdc2kbBFp-sJQ6bAZtNvIHFgVkLbwNcxpyNGEQweq~l9wFSocdEVW738u8M2PMQtyoalErL31krDPsIAHdMp3vf9JL9~Ak0zZF7dHm~ewRZqR-adCuqaDS5dpsoZHDGgeyCJiyu4NXQr2o~AcFqEG284V6SgEHkxhGBfRHBYgy3igyLVbPidvwfzG2rIPNpARwVYPQh6VJPDzOHLEg__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+      "temporada": 1,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/62756172712168448.mp4?Expires=1754013831&Signature=Ku1GpR~Z8MnOUu~Ef0z7OnJXt7K96vL0ybQzuwsnOQh8GKT10WH3H7k7keB-8fqpoOVclDEvfh0siXgwWQseyY8nIwvG2YEBiMMKgDfHZSbhwSlUrN4i2ipC1Jd0vkbjJWbCtdc2kbBFp-sJQ6bAZtNvIHFgVkLbwNcxpyNGEQweq~l9wFSocdEVW738u8M2PMQtyoalErL31krDPsIAHdMp3vf9JL9~Ak0zZF7dHm~ewRZqR-adCuqaDS5dpsoZHDGgeyCJiyu4NXQr2o~AcFqEG284V6SgEHkxhGBfRHBYgy3igyLVbPidvwfzG2rIPNpARwVYPQh6VJPDzOHLEg__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
     },
     {
-      "name": "COS.TV - Parks and Recreation Dublado Temporada 1 Episódio 1",
-      "url": "https://videocdn.cos.tv/video/62756144774171648.mp4?Expires=1754013733&Signature=PPe3OxcbXD-AJMjYa~dG86Wq~v42KO8G9VnKlmlavYz1g0d9TU3HWHKd1AiFe-gE3La5IjTdz6ywsNZf~ZKziWIThtVWu21cYGWQlQvs7m1RnmDyONmgxjr~sTomfvTUw4FR-pLzaRhMPtSgCxmBIOZmB2aFs96CnAY9NLqWJcAO7CS5icDPpWmnA1lRHyMzzApfnRZsTtqCKV1j5kvGx831zdF0I6twuhqv0zWwkSAzjk40wwPDE8uxm714Mbb1oiO36tzNL96iA0K9ux-Tmwi1iMUhFtsHKochiuaGGzxB~mZTNejoXUwTU9xJVhNTZRHUpEf2gE44PMg03FVXrA__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+      "temporada": 1,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "COS.TV - Dublado",
+          "url": "https://videocdn.cos.tv/video/62756144774171648.mp4?Expires=1754013733&Signature=PPe3OxcbXD-AJMjYa~dG86Wq~v42KO8G9VnKlmlavYz1g0d9TU3HWHKd1AiFe-gE3La5IjTdz6ywsNZf~ZKziWIThtVWu21cYGWQlQvs7m1RnmDyONmgxjr~sTomfvTUw4FR-pLzaRhMPtSgCxmBIOZmB2aFs96CnAY9NLqWJcAO7CS5icDPpWmnA1lRHyMzzApfnRZsTtqCKV1j5kvGx831zdF0I6twuhqv0zWwkSAzjk40wwPDE8uxm714Mbb1oiO36tzNL96iA0K9ux-Tmwi1iMUhFtsHKochiuaGGzxB~mZTNejoXUwTU9xJVhNTZRHUpEf2gE44PMg03FVXrA__&Key-Pair-Id=APKAJ2AQKNFFAUYSAMUQ"
+        }
+      ]
     }
   ]
 }
