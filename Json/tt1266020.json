@@ -7,8 +7,458 @@
       "episodio": 1,
       "streams": [
         {
-          "name": "Dublado ",
-          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQdVtPaQcXzGmIayY_5GHZ7sCiZXxAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755286090&Signature=uYrIFQOaiGzXPt30%2BUCCi9m5JuI%3D&ngsw-bypass=1"
+          "name": "fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQdVtPaQcXzGmIayY_5GHZ7sCiZXxAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755302891&Signature=YKRaj8POiC617s6xJtLg5mKym%2FQ%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChSyJGUhzYK5dmE6LqRnbUGXCFsOpBAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755302897&Signature=h%2BBZkj1k2oWM1gSZ6zZjMWYzFAA%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQ90nXpRKUdqZ_hCkuM_giTUm_F2xAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755302903&Signature=PQMOi%2FtqD2%2By8%2FflzyOJYikS%2F1A%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChRirADkwqQyuua6UA67GVAkmA_DGBAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755302908&Signature=VKtvgAPHyKy6UePq%2BOSW8rJSaJM%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChTm_nDTXt_cBbUcGiIIGllkLDIsLhAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755302914&Signature=qVVdPC0KAaP3phBHlFhkpPTj1kQ%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChR82lq6UxsYZG0svkHf9Fc2B5GTVBAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755302920&Signature=895wvoYUzFTvLPuqop5WBnqVd%2FI%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQzPUtjc-FiEESN914DVTFwVoTdAxAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304208&Signature=%2B2xUIJcN9MGRyI8if0M71mV20UY%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChRFQ6zs4eCOh63dfRiS3yThuaYq-BAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304214&Signature=NwWQOXv2uKRoHLtvD6ggdKFOtWI%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChSxXWY6ioim2dx_N2R-oPkPtG8cZBAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304219&Signature=vi3YtQl3OxV1RfV3cNvjIkGHaEk%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChSqOdl1m4XWIxhQ36ST9ceHLDx2DBAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304225&Signature=L5aC%2BjPtEqW8je69sm7mpigfuMY%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChRMbGTJWPbDkJ5S1YM57f-DQMgiPBAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304230&Signature=2lynwAVfk%2B%2BGEde6yKCRCC1AQEg%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChTohlPYvOwahDRLil3vuJK0QHPa-xAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304235&Signature=%2B4RJC1lddWooEX%2FvhmTUm0ZIW8Y%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQOyKXFbdmoksJRdEpaUaTdN8M0RxAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304241&Signature=vxrz9rQYvP5%2BFxEafRVAJXCuCtM%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChRVkSM5rJWXF4EQL83PxPaAW1WLwhAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304246&Signature=RPPLfrxRI0fntb%2BoxRgH5brqYdY%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 9,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQynGRJHiyJWHmpVgPwFlMmQetclxAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304252&Signature=wGbw7wA9kXU9nIpNsPcWhvtZpHI%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 10,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChSzaVuTKAv4S_BIFyWZM7n5pfq-JxAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304257&Signature=zvJXuYqzKxrHzR%2FjLdT9te5INgo%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 11,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChTxNNaFoC_X4sWMZxVQ1_Dj2_cg4hAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304263&Signature=OYo09dUEdSgamUouGxhK94UmcVg%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 12,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChSqIDrJfilGYQ-CFKmsI-Hmg17LsxAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304268&Signature=BS6aPCkw06DsMQ5coNsCYq%2F40Yk%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 13,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChTdHOmQALCeSSlh7iWxecPxcPCp4RAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304273&Signature=buiYa605P7tg7boqsM0qPpJfUAQ%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 14,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChTCu5zm_9tLdgO-dB9d1Nfe8gOmoBAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304279&Signature=tlYkhj5djsUdp9jzZ0CpoEJoZJY%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 15,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQlPBP1nTnVzMTE6pIbFnX_OuHjhBAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304284&Signature=5sSso2jUx0kYPiTJvaIL2Nj0GFQ%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 16,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChTkXTba3xn6UBwQNfmaf4eUWfJ--hAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304290&Signature=LiCK5VhIuVjLK%2B7nSQZvK4BBZU8%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 17,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChTMIrdrUPsPzQT4f2MgA-723tuPHxAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304295&Signature=W8QX1bheG32gSd4QWjkmGnjFTwY%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 18,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChSOLLWtdA7j1nUakEKoPykUa86RyhAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304301&Signature=hSBKMDogd6qAgwC8YN9vUnKx1bE%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 19,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChSGFaV9s91CW_hvAIHkh3R9Otzs8hAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304306&Signature=lOMLC%2B8M2Y2uP%2FFkLzjqog4tSXc%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 20,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChRLIv157dFStDiIVr-gISFGK6P3NxAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304312&Signature=RljkXKhTkln8lpwl%2Fcb2uU%2F9RTo%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 21,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChSIpBB6rTOvBvQm-a-yhq2skH0iTRAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304318&Signature=R4oOHYkeoWQ699kurom%2Fam0YxFY%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 22,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQmo1ffxxssa5aS7yEY7Nz5PSbwqhAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304323&Signature=l%2Ba6wrzjQQUOJgV9dlNAbJA%2Fs9o%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 23,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQy-nndhJleQHZAMzZ7qF99htH_HRAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304328&Signature=K%2Fe05TLD64ayyBX6RFfI5QuntKI%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 2,
+      "episodio": 24,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQiBb6XEWBwMkyxsTCzwXUE7M_tWRAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304334&Signature=0GCLC1Es6%2BAsYcwCGLt0yHJo10c%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQCKdsLqwiSSFqLFGzDtc8dJSKJQhAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304477&Signature=%2BCrUHVTdgoZ2AY5TEAwepSw3P8A%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQz3M0HZpUIdcCkhNSk6GvZ47uMDRAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304483&Signature=B86TmDnfN%2BDhtifP0QcoccWDAwI%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChS0mYQobM30b_s4CyayjrCPZcN_AxAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304489&Signature=r%2FmIKS0E27flvipAX07Ucxb7M90%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChSf-KyCrUZ2k47Nx7svKpixm-NCbhAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304494&Signature=pbc4M5yLAn7nwcxFf%2Bp4lWmUhxQ%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 5,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChR_mqhWYOcYVDa_pJu8-KlX-MPIiRAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304500&Signature=2DRawsSK141PoFetJ644qJiPWys%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 6,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChRwNlTgXBFicnhWMhr_RrSKzZ8TORAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304506&Signature=PbwDPZEDAYtSqJkaAG088ceH%2FV8%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 7,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChRdu6OstjlVrvxpV7DjkSZh02b0shAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304512&Signature=IrJlwy598rJ2seNHG2GSWdMloRQ%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 8,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChS50rMk5zoTCAVAS1KXUnJ0Sid0MhAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304517&Signature=PRd%2Fi9RKHmtA%2FUFumGIT2QETU5s%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 9,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChSHiwGPgqLRpRZzrLKD79RRARj0CBAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304523&Signature=PIhPzAutQBQEt4wVf%2Ffq9FMixL8%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 10,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChTU6NeWpbjne712mert-h3S4lUJ-BAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304529&Signature=gNGbUU09MWuJYZXXrMHhcPLlt2Y%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 11,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChQrD-Jn0dTTDTf9XG5lv4M4Qqc1iBAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304535&Signature=ulRId8pk3gQ8%2Fwgd744yQqn7Fn0%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 12,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChRdqrdm2wfxpbU7duHofMT3pMPPMRAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304541&Signature=4%2BgG4E9jhijK%2FahUKaiesYVSDRQ%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 13,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChSnOcoWra4_2LXaPBm8-MZWGmeMohAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304546&Signature=%2FWI4UF7D7ekQ80s7sygmHrET94A%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 14,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChTDiZhnJTSaPImpIRXA2iLma9xjmBAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304552&Signature=U%2FQlvVzBpRW7rSDiAlI1OFeYuQQ%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 15,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://s3.wasabisys.com/degoo-production-large-file-us-east1.degoo.info/wEJicy/ntS7FQ/mp4/ChRORWTGrecVB3CptUv9wD2efrpQohAA.mp4?AWSAccessKeyId=QCIW8NA9JUUC4PKQYZTJ&Expires=1755304558&Signature=vRNRtBAxDXc44DMl4yzDIO3H1XM%3D&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 3,
+      "episodio": 16,
+      "streams": [
+        {
+          "name": "Fenixsky",
+          "url": "https://c.degoo.media/degoo-production-large-file-us-east1.degoo.me/wEJicy/ntS7FQ/mp4/ChQxnKGq2mFgXr0tzSYG8qnj1W3WGhAA.mp4?q=JBZKJ1UUEjkiDT00EAwOFXYrJnMvJz4UOg0QOjwQNidPFhJpOBppE18dDwxaah9qMDkVXydcC0IQGUtCfis2KhMKcT0AHg87HBQNKRUXQRQIMA8BUm9CYWtLRRBSVU0DE1AWPTs1HTwiZD9DNwgxMi4uMxUpMQw0DQxlKAE_UAsKQiN_cyp6Ymos&ngsw-bypass=1"
         }
       ]
     }
