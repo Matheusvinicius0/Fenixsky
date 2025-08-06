@@ -1,0 +1,42 @@
+{
+  "id": "tt34379847",
+  "type": "series",
+  "streams": [
+    {
+      "temporada": 1,
+      "episodio": 1,
+      "streams": [
+        {
+          "url": "https://c.degoo.media/degoo-production-large-file-us-east1.degoo.me/wEJa_y/h5S8FQ/mp4/ChRqsInbjw7mBD3kBSQuV243MZf4PBAA.mp4?q=JBZKJ1UUEjkiDT00EAwOFXYrJnMvJz4UOg0QOjwQNidPFhJpOBppE18dDwxaah9qMDkVXydcC0IQGUtCfis2KhMKcT0AHg87HBQNKRUXQRQIMA8BUm9CYWtITB1VV0oDE1AWPTs1HTwiZCxgM30gAC4rQQMVOjYfTTpdPg5LRg1gODY1AE19Aw&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 2,
+      "streams": [
+        {
+          "url": "https://c.degoo.media/degoo-production-large-file-us-east1.degoo.me/wEJa_y/h5S8FQ/mp4/ChRNrdJ208paib0fEsoxBLqYrpTzERAA.mp4?q=JBZKJ1UUEjkiDT00EAwOFXYrJnMvJz4UOg0QOjwQNidPFhJpOBppE18dDwxaah9qMDkVXydcC0IQGUtCfis2KhMKcT0AHg87HBQNKRUXQRQIMA8BUm9CYWtITB1VV0oDE1AWPTs1HTwiZB5QBnMQOCQLGSUzImIQGjxPAzlBcXRvPyEIcU19Aw&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 3,
+      "streams": [
+        {
+          "url": "https://c.degoo.media/degoo-production-large-file-us-east1.degoo.me/wEJa_y/h5S8FQ/mp4/ChQhMFRz45t63JdVcW3-ZWPFKAcQaxAA.mp4?q=JBZKJ1UUEjkiDT00EAwOFXYrJnMvJz4UOg0QOjwQNidPFhJpOBppE18dDwxaah9qMDkVXydcC0IQGUtCfis2KhMKcT0AHg87HBQNKRUXQRQIMA8BUm9CYWtITB1VV0oDE1AWPTs1HTwiZCVBHUw2IhAyOiQYABNrTCR0MxocRA1tJzEUIk19Aw&ngsw-bypass=1"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 4,
+      "streams": [
+        {
+          "url": "https://c.degoo.media/degoo-production-large-file-us-east1.degoo.me/wEJa_y/h5S8FQ/mp4/ChRtUWkjpYmORDAenHt8hKXPvJc9VRAA.mp4?q=JBZKJ1UUEjkiDT00EAwOFXYrJnMvJz4UOg0QOjwQNidPFhJpOBppE18dDwxaah9qMDkVXydcC0IQGUtCfis2KhMKcT0AHg87HBQNKRUXQRQIMA8BUm9CYWtITB1TUU0DE1AWPTs1HTwiZDx4NFhQGXQ9RD4GQjA6AkNLChYTfBhwNGExCE19Aw&ngsw-bypass=1"
+        }
+      ]
+    }
+  ]
+}

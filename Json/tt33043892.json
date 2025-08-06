@@ -1,0 +1,46 @@
+{
+  "id": "tt33043892",
+  "type": "series",
+  "streams": [
+    {
+      "temporada": 1,
+      "episodio": 1,
+      "streams": [
+        {
+          "name": "Topflix",
+          "url": "https://sempra.pro/a1/out/6/10374/10374_dexter.ressurreicao.s01e01.1080p.web-dl.dual.5.1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 2,
+      "streams": [
+        {
+          "name": "Topflix",
+          "url": "https://sempra.pro/a1/out/6/10374/10374_dexter.ressurreicao.s01e02.1080p.web-dl.dual.5.1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 3,
+      "streams": [
+        {
+          "name": "Topflix",
+          "url": "https://sempra.pro/a1/out/6/10374/10374_dexter.ressurreicao.s01e03.1080p.web-dl.dual.5.1.m3u8"
+        }
+      ]
+    },
+    {
+      "temporada": 1,
+      "episodio": 4,
+      "streams": [
+        {
+          "name": "Topflix",
+          "url": "https://sempra.pro/a1/out/6/10374/10374_dexter.ressurreicao.s01e04.1080p.web-dl.dual.5.1.m3u8"
+        }
+      ]
+    }
+  ]
+}
