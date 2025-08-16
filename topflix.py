@@ -2,11 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import quote
 import re
-import logging
 import json
 import os
-
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def search_topflix(imdb_id, titles, content_type, season=None, episode=None):
     """
@@ -19,7 +16,6 @@ def search_topflix(imdb_id, titles, content_type, season=None, episode=None):
                 local_data = json.load(f)
 
             if local_data.get('id') == imdb_id:
-                logging.info(f"Usando JSON local para {imdb_id}")
                 if content_type == 'series' and season and episode:
                     for item in local_data.get('streams', []):
                         if item.get('temporada') == season and item.get('episodio') == episode:
@@ -27,11 +23,9 @@ def search_topflix(imdb_id, titles, content_type, season=None, episode=None):
                 elif content_type == 'movie':
                     return local_data.get('streams', [])
 
-        except Exception as e:
-            logging.error(f"Erro ao ler JSON de {json_path}: {e}")
+        except Exception:
+            pass
 
-    # Se não encontrou localmente, busca online
-    logging.info(f"Nenhum JSON local encontrado. Buscando online: {imdb_id}")
     base_url = "https://topflix.watch"
     path = 'filmes' if content_type == 'movie' else 'series'
 
@@ -83,8 +77,7 @@ def search_topflix(imdb_id, titles, content_type, season=None, episode=None):
                 "url": stream_url.replace('\\', '')
             }]
 
-        except Exception as e:
-            logging.error(f"Erro ao buscar no Topflix: {e}")
+        except Exception:
             continue
 
     return []
