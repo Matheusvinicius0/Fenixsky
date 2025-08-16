@@ -9,7 +9,8 @@ def search_gofilmes(titles, content_type, season=None, episode=None):
     """
     base_url = "https://gofilmess.top"
     for title in titles:
-        if not title or len(title) < 2: continue
+        if not title or len(title) < 2: 
+            continue
         search_slug = title.replace('.', '').replace(' ', '-').lower()
         path = 'series' if content_type == 'series' else 'filmes'
         url = f"{base_url}/{path}/{quote(search_slug)}" if content_type == 'series' else f"{base_url}/{quote(search_slug)}"
@@ -25,8 +26,10 @@ def search_gofilmes(titles, content_type, season=None, episode=None):
                         panels = soup.select(selector)
                         if panels:
                             break
-                    if not panels: continue
-                    if not (season and episode and 0 < season <= len(panels)): continue
+                    if not panels: 
+                        continue
+                    if not (season and episode and 0 < season <= len(panels)): 
+                        continue
                     selected_panel = panels[season - 1]
                     episode_links = selected_panel.select('div.ep a[href], li a[href]')
                     if 0 < episode <= len(episode_links):
@@ -36,7 +39,10 @@ def search_gofilmes(titles, content_type, season=None, episode=None):
                     if player_links:
                         return [{"name": f"GoFilmes - {link.get_text(strip=True)}", "url": urljoin(base_url, link['href'])} for link in player_links]
         except Exception:
+            # Se der erro, simplesmente tenta o próximo título da lista
             continue
+            
+    # Se o loop terminar sem encontrar nada, retorna uma lista vazia
     return []
 
 
