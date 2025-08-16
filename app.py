@@ -7,14 +7,15 @@ from slowapi.util import get_remote_address
 import requests
 import re
 from html import unescape
+import os
+import json
+import logging
 
-# Importações dos seus módulos (sem as de COS.TV)
+# Importações dos seus módulos
 from netcine import catalog_search, search_link, search_term
 from gofilmes import search_gofilmes, resolve_stream as resolve_gofilmes_stream
-from topflix import search_topflix
 
-VERSION = "0.0.4" # A versão pode ser atualizada se desejar
-
+VERSION = "0.0.4"
 MANIFEST = {
     "id": "com.fenixsky", "version": VERSION, "name": "FENIXSKY",
     "description": "Fontes: GoFilmes, Topflix, Netcine.",
@@ -41,17 +42,16 @@ def add_cors(response: Response):
     response.headers["Access-Control-Allow-Credentials"] = "true"
     return response
 
-# --- FUNÇÃO PARA STREAMTAPE (mantida pois pode ser útil para outras fontes) ---
 def resolve_streamtape_link(player_url: str):
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
         page_content = requests.get(player_url, headers=headers).text
         video_url_part = None
-        
+
         match = re.search(r'<div id="robotlink" style="display:none;">(.*?)</div>', page_content)
         if match:
             video_url_part = match.group(1)
-        
+
         if not video_url_part:
             match = re.search(r'<span id="botlink" style="display:none;">(.*?)</span>', page_content)
             if match:
@@ -91,7 +91,7 @@ async def meta(type: str, id: str, request: Request):
 @limiter.limit(rate_limit)
 async def stream(type: str, id: str, request: Request):
     scrape_ = []
-    
+
     if type in ["movie", "series"]:
         imdb_id = id.split(':')[0]
         season, episode = None, None
@@ -104,16 +104,28 @@ async def stream(type: str, id: str, request: Request):
             except (IndexError, ValueError):
                 return add_cors(JSONResponse(content={"streams": []}))
 
+        # --- Fonte: JSON Local ---
+        json_path = os.path.join("Json", f"{imdb_id}.json")
+        if os.path.exists(json_path):
+            try:
+                with open(json_path, 'r', encoding='utf-8') as f:
+                    local_data = json.load(f)
+
+                if local_data.get('id') == imdb_id:
+                    if type == 'series' and season and episode:
+                        for item in local_data.get('streams', []):
+                            if item.get('temporada') == season and item.get('episodio') == episode:
+                                scrape_.extend(item.get('streams', []))
+                                break
+                    elif type == 'movie':
+                        scrape_.extend(local_data.get('streams', []))
+
+            except Exception as e:
+                logging.error(f"Erro ao ler JSON de {json_path}: {e}")
+
         titles, _ = search_term(imdb_id)
         if not titles: return add_cors(JSONResponse(content={"streams": []}))
-        
-        # --- Fonte: Topflix ---
-        try:
-            topflix_streams = search_topflix(imdb_id, titles, type, season, episode)
-            if topflix_streams: scrape_.extend(topflix_streams)
-        except Exception:
-            pass
-        
+
         # --- Fonte: Netcine ---
         try:
             netcine_streams = search_link(id)
@@ -136,8 +148,6 @@ async def stream(type: str, id: str, request: Request):
         except Exception:
             pass
         
-        # --- Bloco do COS.TV foi removido daqui ---
-
     return add_cors(JSONResponse(content={"streams": scrape_}))
 
 @app.options("/{path:path}")
