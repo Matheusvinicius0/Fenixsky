@@ -3,8 +3,6 @@ from bs4 import BeautifulSoup
 from urllib.parse import quote, urljoin
 import re
 
-# Configuração do logging
-
 def search_gofilmes(titles, content_type, season=None, episode=None):
     """
     Busca por um filme ou série no GoFilmes e retorna o link da página do player.
@@ -37,7 +35,8 @@ def search_gofilmes(titles, content_type, season=None, episode=None):
                     player_links = soup.select('div.link a[href]')
                     if player_links:
                         return [{"name": f"GoFilmes - {link.get_text(strip=True)}", "url": urljoin(base_url, link['href'])} for link in player_links]
-        except Exception as e:
+        except Exception:
+            continue
     return []
 
 
@@ -79,5 +78,5 @@ def resolve_stream(player_url):
                     return stream_url, headers_for_stremio
         return None, None
 
-    except Exception as e:
+    except Exception:
         return None, None
