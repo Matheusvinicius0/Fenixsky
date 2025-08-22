@@ -15,11 +15,11 @@ import logging
 from netcine import catalog_search, search_link, search_term
 from gofilmes import search_gofilmes, resolve_stream as resolve_gofilmes_stream
 
-VERSION = "0.0.4"
+VERSION = "0.0.1"
 MANIFEST = {
     "id": "com.fenixsky", "version": VERSION, "name": "FENIXSKY",
-    "description": "Fontes: GoFilmes, Topflix, Netcine.",
-    "logo": "https://i.imgur.com/qVgkbYn.png", "resources": ["catalog", "meta", "stream"],
+    "description": "Sua fonte para filmes e séries.",
+    "logo": "https://imgur.com/a/nbGKryz", "resources": ["catalog", "meta", "stream"],
     "types": ["movie", "series"], "catalogs": [
         {"type": "movie", "id": "fenixsky", "name": "FENIXSKY", "extraSupported": ["search"]},
         {"type": "series", "id": "fenixsky", "name": "FENIXSKY", "extraSupported": ["search"]}
