@@ -19,7 +19,7 @@ VERSION = "0.0.1"
 MANIFEST = {
     "id": "com.fenixsky", "version": VERSION, "name": "FENIXSKY",
     "description": "Sua fonte para filmes e séries.",
-    "logo": "https://i.imgur.com/LVNrWUD.png", "resources": ["catalog", "meta", "stream"],
+    "logo": "https://i.imgur.com/STzsx5Y.png", "resources": ["catalog", "meta", "stream"],
     "types": ["movie", "series"], "catalogs": [
         {"type": "movie", "id": "fenixsky", "name": "FENIXSKY", "extraSupported": ["search"]},
         {"type": "series", "id": "fenixsky", "name": "FENIXSKY", "extraSupported": ["search"]}
