@@ -19,13 +19,12 @@ VERSION = "0.0.1"
 MANIFEST = {
     "id": "com.fenixsky", "version": VERSION, "name": "FENIXSKY",
     "description": "Sua fonte para filmes e séries.",
-    "logo": "https://imgur.com/a/nbGKryz", "resources": ["catalog", "meta", "stream"],
+    "logo": "https://i.imgur.com/nbGKryz.png", "resources": ["catalog", "meta", "stream"],
     "types": ["movie", "series"], "catalogs": [
         {"type": "movie", "id": "fenixsky", "name": "FENIXSKY", "extraSupported": ["search"]},
         {"type": "series", "id": "fenixsky", "name": "FENIXSKY", "extraSupported": ["search"]}
     ], "idPrefixes": ["fenixsky", "tt"]
 }
-
 templates = Environment(loader=FileSystemLoader("templates"))
 limiter = Limiter(key_func=get_remote_address)
 rate_limit = '5/second'
